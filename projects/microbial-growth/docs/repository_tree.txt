@@ -1,0 +1,152 @@
+laboratory-computational-physics-mode-b-final/
+├── projects/
+│   └── microbial-growth/
+│       ├── data/
+│       │   ├── processed/
+│       │   │   └── processed_input_data.csv
+│       │   ├── raw/
+│       │   │   └── .gitkeep
+│       │   └── README.md
+│       ├── docs/
+│       ├── notebooks/
+│       │   ├── microbial_growth_modified_hazard_one_sugar.ipynb
+│       │   └── microbial_growth_modified_hazard_one_sugar_clean.ipynb
+│       ├── outputs/
+│       │   ├── by_sugar/
+│       │   │   ├── Ace/
+│       │   │   │   ├── acf.png
+│       │   │   │   ├── corner_plot.png
+│       │   │   │   ├── diagnostics.json
+│       │   │   │   ├── flat_chain.csv
+│       │   │   │   ├── flat_log_probability.csv
+│       │   │   │   ├── likelihood_scan_u.png
+│       │   │   │   ├── log_probability.npy
+│       │   │   │   ├── posterior_predictive_histograms.png
+│       │   │   │   ├── posterior_predictive_simulation.csv
+│       │   │   │   ├── posterior_summary.csv
+│       │   │   │   ├── survival_fit.png
+│       │   │   │   └── trace_plots.png
+│       │   │   ├── DMa/
+│       │   │   │   ├── acf.png
+│       │   │   │   ├── corner_plot.png
+│       │   │   │   ├── diagnostics.json
+│       │   │   │   ├── flat_chain.csv
+│       │   │   │   ├── flat_log_probability.csv
+│       │   │   │   ├── likelihood_scan_u.png
+│       │   │   │   ├── log_probability.npy
+│       │   │   │   ├── posterior_predictive_histograms.png
+│       │   │   │   ├── posterior_predictive_simulation.csv
+│       │   │   │   ├── posterior_summary.csv
+│       │   │   │   ├── survival_fit.png
+│       │   │   │   └── trace_plots.png
+│       │   │   ├── Glu/
+│       │   │   │   ├── acf.png
+│       │   │   │   ├── corner_plot.png
+│       │   │   │   ├── diagnostics.json
+│       │   │   │   ├── flat_chain.csv
+│       │   │   │   ├── flat_log_probability.csv
+│       │   │   │   ├── likelihood_scan_u.png
+│       │   │   │   ├── log_probability.npy
+│       │   │   │   ├── posterior_predictive_histograms.png
+│       │   │   │   ├── posterior_predictive_simulation.csv
+│       │   │   │   ├── posterior_summary.csv
+│       │   │   │   ├── survival_fit.png
+│       │   │   │   └── trace_plots.png
+│       │   │   ├── Gly/
+│       │   │   │   ├── acf.png
+│       │   │   │   ├── corner_plot.png
+│       │   │   │   ├── diagnostics.json
+│       │   │   │   ├── flat_chain.csv
+│       │   │   │   ├── flat_log_probability.csv
+│       │   │   │   ├── likelihood_scan_u.png
+│       │   │   │   ├── log_probability.npy
+│       │   │   │   ├── posterior_predictive_histograms.png
+│       │   │   │   ├── posterior_predictive_simulation.csv
+│       │   │   │   ├── posterior_summary.csv
+│       │   │   │   ├── survival_fit.png
+│       │   │   │   └── trace_plots.png
+│       │   │   ├── Lac/
+│       │   │   │   ├── acf.png
+│       │   │   │   ├── corner_plot.png
+│       │   │   │   ├── diagnostics.json
+│       │   │   │   ├── flat_chain.csv
+│       │   │   │   ├── flat_log_probability.csv
+│       │   │   │   ├── likelihood_scan_u.png
+│       │   │   │   ├── log_probability.npy
+│       │   │   │   ├── posterior_predictive_histograms.png
+│       │   │   │   ├── posterior_predictive_simulation.csv
+│       │   │   │   ├── posterior_summary.csv
+│       │   │   │   ├── survival_fit.png
+│       │   │   │   └── trace_plots.png
+│       │   │   ├── Pyr/
+│       │   │   │   ├── acf.png
+│       │   │   │   ├── corner_plot.png
+│       │   │   │   ├── diagnostics.json
+│       │   │   │   ├── flat_chain.csv
+│       │   │   │   ├── flat_log_probability.csv
+│       │   │   │   ├── likelihood_scan_u.png
+│       │   │   │   ├── log_probability.npy
+│       │   │   │   ├── posterior_predictive_histograms.png
+│       │   │   │   ├── posterior_predictive_simulation.csv
+│       │   │   │   ├── posterior_summary.csv
+│       │   │   │   ├── survival_fit.png
+│       │   │   │   └── trace_plots.png
+│       │   │   ├── Rha/
+│       │   │   │   ├── acf.png
+│       │   │   │   ├── corner_plot.png
+│       │   │   │   ├── diagnostics.json
+│       │   │   │   ├── flat_chain.csv
+│       │   │   │   ├── flat_log_probability.csv
+│       │   │   │   ├── likelihood_scan_u.png
+│       │   │   │   ├── log_probability.npy
+│       │   │   │   ├── posterior_predictive_histograms.png
+│       │   │   │   ├── posterior_predictive_simulation.csv
+│       │   │   │   ├── posterior_summary.csv
+│       │   │   │   ├── survival_fit.png
+│       │   │   │   └── trace_plots.png
+│       │   │   ├── Suc/
+│       │   │   │   ├── acf.png
+│       │   │   │   ├── corner_plot.png
+│       │   │   │   ├── diagnostics.json
+│       │   │   │   ├── flat_chain.csv
+│       │   │   │   ├── flat_log_probability.csv
+│       │   │   │   ├── likelihood_scan_u.png
+│       │   │   │   ├── log_probability.npy
+│       │   │   │   ├── posterior_predictive_histograms.png
+│       │   │   │   ├── posterior_predictive_simulation.csv
+│       │   │   │   ├── posterior_summary.csv
+│       │   │   │   ├── survival_fit.png
+│       │   │   │   └── trace_plots.png
+│       │   │   ├── Xyl/
+│       │   │   │   ├── acf.png
+│       │   │   │   ├── corner_plot.png
+│       │   │   │   ├── diagnostics.json
+│       │   │   │   ├── flat_chain.csv
+│       │   │   │   ├── flat_log_probability.csv
+│       │   │   │   ├── log_probability.npy
+│       │   │   │   ├── posterior_predictive_histograms.png
+│       │   │   │   ├── posterior_predictive_simulation.csv
+│       │   │   │   ├── posterior_summary.csv
+│       │   │   │   ├── survival_fit.png
+│       │   │   │   └── trace_plots.png
+│       │   │   └── README.md
+│       │   ├── summary/
+│       │   │   ├── all_sugars_diagnostics.csv
+│       │   │   ├── all_sugars_parameter_modes.csv
+│       │   │   ├── all_sugars_posterior_summary.csv
+│       │   │   ├── README.md
+│       │   │   ├── run_config.json
+│       │   │   └── sugar_parameter_scatter.png
+│       │   ├── README.md
+│       │   └── results_manifest.csv
+│       ├── report/
+│       │   └── README.md
+│       ├── scripts/
+│       │   └── check_results.py
+│       ├── src/
+│       │   └── README.md
+│       └── README.md
+├── .gitignore
+├── LICENSE.md
+├── README.md
+└── requirements.txt

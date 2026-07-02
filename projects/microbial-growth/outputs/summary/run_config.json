@@ -1,0 +1,34 @@
+{
+  "data_path": "df_UMIK_allSources.csv",
+  "sugars": [
+    "Ace",
+    "DMa",
+    "Glu",
+    "Gly",
+    "Lac",
+    "Pyr",
+    "Rha",
+    "Suc",
+    "Xyl"
+  ],
+  "n_walkers": 40,
+  "burn_steps": 1000,
+  "n_steps": 3000,
+  "thin": 5,
+  "random_seed": 42,
+  "sim_lineages": 40,
+  "sim_generations": 80,
+  "acf_max_lag": 30,
+  "division_time_bins": 25,
+  "other_bins": 40,
+  "parameter_names": [
+    "u",
+    "v",
+    "omega2",
+    "mu_alpha",
+    "sigma_alpha",
+    "mu_f",
+    "sigma_f"
+  ],
+  "root_output_dir": "outputs\\batch_all_sugars"
+}

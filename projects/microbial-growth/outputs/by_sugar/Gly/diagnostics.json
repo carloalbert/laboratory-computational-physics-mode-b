@@ -1,0 +1,24 @@
+{
+  "sugar": "Gly",
+  "n_observations": 1647,
+  "n_lineages": 91,
+  "n_walkers": 40,
+  "burn_steps": 1000,
+  "n_steps": 3000,
+  "thin": 5,
+  "random_seed": 42,
+  "mean_acceptance_fraction": 0.4086916666666666,
+  "mle_success": true,
+  "mle_log_likelihood": 4373.290750563712,
+  "max_log_probability": 4446.232193080188,
+  "runtime_minutes": 1.2843095978101096,
+  "autocorr_time": {
+    "u": 38.618350663928545,
+    "v": 38.11244448696228,
+    "omega2": 38.386799421187895,
+    "mu_alpha": 35.62347021336835,
+    "sigma_alpha": 35.2429705884404,
+    "mu_f": 37.14973308979133,
+    "sigma_f": 34.59450919702803
+  }
+}

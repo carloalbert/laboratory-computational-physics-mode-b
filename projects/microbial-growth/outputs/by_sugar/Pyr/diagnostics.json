@@ -1,0 +1,24 @@
+{
+  "sugar": "Pyr",
+  "n_observations": 1504,
+  "n_lineages": 108,
+  "n_walkers": 40,
+  "burn_steps": 1000,
+  "n_steps": 3000,
+  "thin": 5,
+  "random_seed": 42,
+  "mean_acceptance_fraction": 0.4400083333333334,
+  "mle_success": true,
+  "mle_log_likelihood": 3203.311623999532,
+  "max_log_probability": 3222.835487852657,
+  "runtime_minutes": 1.2272802193959553,
+  "autocorr_time": {
+    "u": 37.775724119232045,
+    "v": 37.09950695399836,
+    "omega2": 37.615019567011274,
+    "mu_alpha": 33.391921579673316,
+    "sigma_alpha": 39.46252558173662,
+    "mu_f": 36.32887471943934,
+    "sigma_f": 35.8552421842528
+  }
+}

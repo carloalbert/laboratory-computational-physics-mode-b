@@ -1,0 +1,24 @@
+{
+  "sugar": "Rha",
+  "n_observations": 4802,
+  "n_lineages": 424,
+  "n_walkers": 40,
+  "burn_steps": 1000,
+  "n_steps": 3000,
+  "thin": 5,
+  "random_seed": 42,
+  "mean_acceptance_fraction": 0.4590583333333333,
+  "mle_success": true,
+  "mle_log_likelihood": 12389.078104462485,
+  "max_log_probability": 12493.219207976257,
+  "runtime_minutes": 2.8001282771428424,
+  "autocorr_time": {
+    "u": 36.98707544415064,
+    "v": 34.11922957783344,
+    "omega2": 34.49294318398296,
+    "mu_alpha": 38.2505195565862,
+    "sigma_alpha": 35.45731637487456,
+    "mu_f": 35.75386547181116,
+    "sigma_f": 34.18760417828407
+  }
+}

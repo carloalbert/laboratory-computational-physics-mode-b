@@ -1,0 +1,24 @@
+{
+  "sugar": "Lac",
+  "n_observations": 6063,
+  "n_lineages": 285,
+  "n_walkers": 40,
+  "burn_steps": 1000,
+  "n_steps": 3000,
+  "thin": 5,
+  "random_seed": 42,
+  "mean_acceptance_fraction": 0.46715,
+  "mle_success": true,
+  "mle_log_likelihood": 13850.385605607855,
+  "max_log_probability": 14227.999447821276,
+  "runtime_minutes": 3.2813884894053142,
+  "autocorr_time": {
+    "u": 35.49550415788374,
+    "v": 35.53532575509386,
+    "omega2": 33.85431074044151,
+    "mu_alpha": 36.402185205434485,
+    "sigma_alpha": 36.197467772843204,
+    "mu_f": 34.177790023062265,
+    "sigma_f": 38.939391134421804
+  }
+}

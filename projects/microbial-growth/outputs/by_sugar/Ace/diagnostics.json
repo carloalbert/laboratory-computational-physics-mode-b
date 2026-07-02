@@ -1,0 +1,24 @@
+{
+  "sugar": "Ace",
+  "n_observations": 597,
+  "n_lineages": 101,
+  "n_walkers": 40,
+  "burn_steps": 1000,
+  "n_steps": 3000,
+  "thin": 5,
+  "random_seed": 42,
+  "mean_acceptance_fraction": 0.39917500000000006,
+  "mle_success": true,
+  "mle_log_likelihood": 1430.2296030628086,
+  "max_log_probability": 1462.7887965884868,
+  "runtime_minutes": 0.9003161549568176,
+  "autocorr_time": {
+    "u": 35.13892944186825,
+    "v": 33.70387410816745,
+    "omega2": 36.97393920306616,
+    "mu_alpha": 34.36533075922925,
+    "sigma_alpha": 36.919878796893315,
+    "mu_f": 34.65048200803273,
+    "sigma_f": 31.964578930266313
+  }
+}
