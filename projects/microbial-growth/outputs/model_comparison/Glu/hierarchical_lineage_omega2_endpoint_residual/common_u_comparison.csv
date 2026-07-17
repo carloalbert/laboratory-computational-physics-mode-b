@@ -1,0 +1,19 @@
+diagnostic,variable,common_u,hierarchical_u,improvement,improvement_definition
+marginal_sd_ratio,added_size,1.0174964880043913,1.026273072754042,-0.008776584749650596,positive means closer to one
+marginal_ks,added_size,0.0180602239473256,0.01755344634408789,0.0005067776032377097,positive means smaller KS distance
+marginal_sd_ratio,alpha,1.1178577727356194,1.1206536950800712,-0.0027959223444518067,positive means closer to one
+marginal_ks,alpha,0.1032499231242312,0.1008610086100861,0.0023889145141451074,positive means smaller KS distance
+marginal_sd_ratio,epsilon,0.6736371837844017,0.6738764696010318,0.00023928581663001935,positive means closer to one
+marginal_ks,epsilon,0.0282947132580068,0.027661216398377608,0.0006334968596291915,positive means smaller KS distance
+marginal_sd_ratio,f,0.999024906147739,0.9981522335354578,-0.000872672612281189,positive means closer to one
+marginal_ks,f,0.0198241466789667,0.017681426814268143,0.002142719864698557,positive means smaller KS distance
+marginal_sd_ratio,length_birth,0.8309576882210198,0.8430554610383532,0.012097772817333374,positive means closer to one
+marginal_ks,length_birth,0.0678367158671586,0.05404366543665437,0.01379305043050423,positive means smaller KS distance
+marginal_sd_ratio,length_final,0.9213777225395254,0.9302426059784907,0.008864883438965299,positive means closer to one
+marginal_ks,length_final,0.0555969811819216,0.042164953128152646,0.013432028053768953,positive means smaller KS distance
+marginal_sd_ratio,time,0.6098525641040574,0.6205384546651809,0.010685890561123457,positive means closer to one
+marginal_ks,time,0.1430725322878228,0.15275215252152524,-0.009679620233702446,positive means smaller KS distance
+iid_acf_mae_lags_1_30,time,0.01621969575534504,0.01613693115635806,8.27645989869806e-05,positive means smaller ACF MAE
+iid_acf_mae_lags_1_30,length_birth,0.0933276219362636,0.09329262619269954,3.499574356405355e-05,positive means smaller ACF MAE
+replay_acf_mae_lags_1_30,time,0.009470872100246537,0.009630618579675208,-0.00015974647942867091,positive means smaller ACF MAE
+replay_acf_mae_lags_1_30,length_birth,0.05283630739785519,0.052741008732457614,9.529866539757792e-05,positive means smaller ACF MAE

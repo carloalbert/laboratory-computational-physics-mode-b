@@ -1,0 +1,175 @@
+{
+  "sugar": "Glu",
+  "input_file": "data/processed/processed_input_data.csv",
+  "model": "loglogistic_mixed_adder_sizer_with_endpoint_residual",
+  "parameterization": {
+    "sampled_scale": "p_star",
+    "birth_pivot": 2.556242664763632,
+    "physical_scale_relation": "u = p_star + eta * birth_pivot",
+    "transformation_jacobian": 1.0,
+    "posterior_corr_p_star_eta": 0.039009346763420404,
+    "posterior_corr_derived_u_eta": 0.9351363387014215,
+    "derived_physical_u": {
+      "mode": 1.8874389764396489,
+      "mean": 1.8952839065536489,
+      "median": 1.8926793607457255,
+      "ci_2.5": 1.8711909134709444,
+      "ci_97.5": 1.9332652852326673,
+      "std": 0.016234860791423545
+    }
+  },
+  "residual_distribution": {
+    "family": "Student-t location-scale",
+    "fixed_degrees_of_freedom": 4.0
+  },
+  "n_complete_observations": 6504,
+  "n_consecutive_transitions": 6151,
+  "n_transition_lineages": 295,
+  "parameter_names": [
+    "p_star",
+    "omega2",
+    "eta",
+    "mu_alpha",
+    "sigma_alpha",
+    "mu_f",
+    "sigma_f",
+    "mu_epsilon",
+    "sigma_epsilon"
+  ],
+  "mle": {
+    "hazard_success": true,
+    "hazard_message": "Optimization terminated successfully.",
+    "alpha_success": true,
+    "fraction_success": true,
+    "residual_success": true,
+    "log_likelihood": 20781.768986846146,
+    "physical_u": 1.8773570379324687
+  },
+  "mean_acceptance_fraction": 0.4335833333333333,
+  "autocorr_time": {
+    "p_star": 48.21141352672255,
+    "omega2": 44.981622763069204,
+    "eta": 53.39604257733889,
+    "mu_alpha": 53.49205114452862,
+    "sigma_alpha": 51.3113395134249,
+    "mu_f": 45.773862373160405,
+    "sigma_f": 55.61994689772112,
+    "mu_epsilon": 48.18538211023391,
+    "sigma_epsilon": 45.403763486038784
+  },
+  "max_sampled_log_probability": 20781.547305462598,
+  "runtime_minutes": 3.966406234105428,
+  "observed_endpoint_residual": {
+    "mean": 0.04064251343488624,
+    "median": 0.043263908948593666,
+    "std": 0.06577420755588248
+  },
+  "acf_lag1": {
+    "time": {
+      "observed": 0.0836848783936438,
+      "simulated": -0.05243321356626822
+    },
+    "length_birth": {
+      "observed": 0.41316147046201157,
+      "simulated": 0.5302492099399654
+    }
+  },
+  "observation_matched_acf_lag1": {
+    "time": {
+      "observed": 0.0836848783936438,
+      "predictive_median": -0.09215531923311204,
+      "predictive_q2.5": -0.11546895745094465,
+      "predictive_q97.5": -0.06963448927727472
+    },
+    "length_birth": {
+      "observed": 0.41316147046201157,
+      "predictive_median": 0.3922437694953582,
+      "predictive_q2.5": 0.37062392801855226,
+      "predictive_q97.5": 0.4151128716133624
+    }
+  },
+  "run_config": {
+    "walkers": 40,
+    "burn": 1000,
+    "steps": 3000,
+    "thin": 5,
+    "seed": 42,
+    "sim_lineages": 40,
+    "sim_generations": 80,
+    "acf_max_lag": 30,
+    "predictive_replicates": 50
+  },
+  "prior_bounds": {
+    "p_star": [
+      -2.556230108520967,
+      19.999997443757334
+    ],
+    "u": [
+      1e-05,
+      20.0
+    ],
+    "omega2": [
+      0.05,
+      30.0
+    ],
+    "eta": [
+      1e-06,
+      0.999999
+    ],
+    "mu_alpha": [
+      1e-08,
+      5.0
+    ],
+    "sigma_alpha": [
+      1e-08,
+      5.0
+    ],
+    "mu_f": [
+      1e-08,
+      0.99999999
+    ],
+    "sigma_f": [
+      1e-08,
+      0.5
+    ],
+    "mu_epsilon": [
+      -1.0,
+      1.0
+    ],
+    "sigma_epsilon": [
+      1e-05,
+      1.0
+    ]
+  },
+  "replicated_predictive_medians": {
+    "time_mean_ratio": 0.9401277849715441,
+    "time_sd_ratio": 0.6098525641040574,
+    "time_ks": 0.14307253228782288,
+    "alpha_mean_ratio": 0.9999180218797484,
+    "alpha_sd_ratio": 1.1178577727356194,
+    "alpha_ks": 0.10324992312423124,
+    "f_mean_ratio": 0.9998918300177932,
+    "f_sd_ratio": 0.999024906147739,
+    "f_ks": 0.01982414667896679,
+    "length_birth_mean_ratio": 0.9999672113422449,
+    "length_birth_sd_ratio": 0.8309576882210198,
+    "length_birth_ks": 0.06783671586715867,
+    "length_final_mean_ratio": 1.003303480324139,
+    "length_final_sd_ratio": 0.9213777225395254,
+    "length_final_ks": 0.05559698118192164,
+    "added_size_mean_ratio": 0.9987476767314354,
+    "added_size_sd_ratio": 1.0174964880043913,
+    "added_size_ks": 0.01806022394732564,
+    "epsilon_mean_ratio": 1.0658290887928206,
+    "epsilon_sd_ratio": 0.6736371837844017,
+    "epsilon_ks": 0.02829471325800683,
+    "time_acf_lag1": -0.061575490391106255,
+    "length_birth_acf_lag1": 0.5242880223747304
+  },
+  "observation_matched_design": {
+    "posterior_replicates": 500,
+    "preserves_initial_size_lineage_length_pairing": true,
+    "description": "Each simulated lineage uses its observed (b0, lineage length) pair.",
+    "legacy_randomized_b0_table": "acf_observation_matched_randomized_b0.csv"
+  }
+}

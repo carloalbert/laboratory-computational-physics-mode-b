@@ -1,0 +1,23 @@
+{
+  "sugar": "Glu",
+  "variable": "length_birth",
+  "lag": 1,
+  "estimator": "sum((x_t-xbar)(x_t+1-xbar)) / sum((x_t-xbar)^2)",
+  "n_total_lineages": 303,
+  "minimum_observations": 3,
+  "n_included_lineages": 286,
+  "n_excluded_short_lineages": 17,
+  "mean": 0.4131614704620114,
+  "median": 0.44399719269729565,
+  "std": 0.2634832523971643,
+  "min": -0.6550956594579463,
+  "q2.5": -0.136628435227719,
+  "q25": 0.26565787504958105,
+  "q75": 0.6094153229326333,
+  "q97.5": 0.7818940574842493,
+  "max": 0.8580031298870672,
+  "n_negative": 24,
+  "fraction_negative": 0.08391608391608392,
+  "n_above_0.5": 120,
+  "fraction_above_0.5": 0.4195804195804196
+}

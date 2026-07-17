@@ -3,12 +3,32 @@ import pandas as pd
 
 PROJECT_DIR = Path(__file__).resolve().parents[1]
 summary = PROJECT_DIR / "outputs" / "summary" / "all_sugars_diagnostics.csv"
-by_sugar = PROJECT_DIR / "outputs" / "by_sugar"
+model_root = PROJECT_DIR / "outputs" / "model_comparison"
+model_name = "loglogistic_endpoint_residual"
 
 print("Project:", PROJECT_DIR)
 print("Summary file exists:", summary.exists())
-print("Sugar folders:", [p.name for p in sorted(by_sugar.iterdir()) if p.is_dir()])
+print(
+    "Completed sugar folders:",
+    [
+        path.parents[1].name
+        for path in sorted(model_root.glob(f"*/{model_name}/diagnostics.json"))
+    ],
+)
 
 if summary.exists():
     df = pd.read_csv(summary)
-    print(df[["sugar", "n_observations", "n_lineages"]])
+    print(
+        df[
+            [
+                "sugar",
+                "n_observations",
+                "n_transitions",
+                "n_transition_lineages",
+                "mean_acceptance_fraction",
+                "tau_max",
+                "time_acf_covered",
+                "birth_acf_covered",
+            ]
+        ]
+    )

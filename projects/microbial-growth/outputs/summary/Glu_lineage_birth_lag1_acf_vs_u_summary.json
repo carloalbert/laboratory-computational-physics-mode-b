@@ -1,0 +1,17 @@
+{
+  "sugar": "Glu",
+  "n_lineages": 286,
+  "x": "posterior median u_l",
+  "y": "individual-lineage birth-length lag-1 ACF",
+  "pearson_r": 0.24190624040591205,
+  "pearson_p": 3.5547710520929294e-05,
+  "spearman_rho": 0.2654532625731061,
+  "spearman_p": 5.327003172187166e-06,
+  "linear_slope": 0.7236763526962208,
+  "linear_intercept": -1.0791365656353333,
+  "linear_r_squared": 0.05851862914732287,
+  "partial_pearson_controlling_mean_birth_r": -0.07640193766862177,
+  "partial_pearson_controlling_mean_birth_p": 0.1976418201065898,
+  "partial_pearson_controlling_mean_sd_and_length_r": 0.015270652939315963,
+  "partial_pearson_controlling_mean_sd_and_length_p": 0.7970751948871894
+}

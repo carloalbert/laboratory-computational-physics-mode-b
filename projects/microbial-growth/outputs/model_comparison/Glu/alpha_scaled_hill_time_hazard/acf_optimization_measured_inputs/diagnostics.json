@@ -1,0 +1,102 @@
+{
+  "sugar": "Glu",
+  "purpose": "ACF-targeted sanity check; not Bayesian inference",
+  "objective": "equal-weight sum of mean squared time-ACF and birth-ACF errors over lags 1..15",
+  "measured_inputs_replayed": [
+    "alpha",
+    "f"
+  ],
+  "lineages": 286,
+  "observations": 6478,
+  "likelihood_posterior_median": {
+    "u": 1.4488361425367164,
+    "omega2": 11.019056526442007,
+    "eta": 8.318511504685599
+  },
+  "optimized_parameters": {
+    "u": 0.00010096772805537416,
+    "omega2": 30.000000000000004,
+    "eta": 0.19239745189511478
+  },
+  "fixed_endpoint_residual_parameters": {
+    "mu_epsilon": 0.0435531019325428,
+    "sigma_epsilon": 0.0316841200269801
+  },
+  "optimizer": {
+    "success": true,
+    "message": "Optimization terminated successfully.",
+    "objective": 0.004403907819143005,
+    "evaluations": 840,
+    "iterations": 25
+  },
+  "run_config": {
+    "sugar": "Glu",
+    "fit_max_lag": 15,
+    "plot_max_lag": 30,
+    "training_replicates": 3,
+    "validation_replicates": 300,
+    "maxiter": 45,
+    "popsize": 10,
+    "seed": 731003,
+    "output_dir": "/Users/albertca/laboratory-computational-physics-mode-b/projects/microbial-growth/outputs/model_comparison/Glu/alpha_scaled_hill_time_hazard/acf_optimization_measured_inputs"
+  },
+  "metrics": [
+    {
+      "variable": "time",
+      "fit": "likelihood",
+      "lag1_observed": 0.0836848783936438,
+      "lag1_median": 0.1641943648688714,
+      "lag1_q2.5": 0.1464550931274302,
+      "lag1_q97.5": 0.17948033794068413,
+      "mae_fit": 0.014818341739063467,
+      "rmse_fit": 0.02465219964568541,
+      "coverage_fit": 0.6,
+      "mae_all": 0.011553562881992234,
+      "rmse_all": 0.018569188406400827,
+      "coverage_all": 0.7333333333333333
+    },
+    {
+      "variable": "time",
+      "fit": "acf_optimized",
+      "lag1_observed": 0.0836848783936438,
+      "lag1_median": 0.013773488089054195,
+      "lag1_q2.5": -0.008202902470860274,
+      "lag1_q97.5": 0.037960889459360346,
+      "mae_fit": 0.017177873811630516,
+      "rmse_fit": 0.025993063471124612,
+      "coverage_fit": 0.7333333333333333,
+      "mae_all": 0.015581065114228687,
+      "rmse_all": 0.02146682801309248,
+      "coverage_all": 0.6
+    },
+    {
+      "variable": "length_birth",
+      "fit": "likelihood",
+      "lag1_observed": 0.41316147046201157,
+      "lag1_median": 0.5133246655490706,
+      "lag1_q2.5": 0.49519147693318694,
+      "lag1_q97.5": 0.5334129957584129,
+      "mae_fit": 0.050223604348537385,
+      "rmse_fit": 0.058828406283578806,
+      "coverage_fit": 0.2,
+      "mae_all": 0.04778986879485445,
+      "rmse_all": 0.052948918913198674,
+      "coverage_all": 0.1
+    },
+    {
+      "variable": "length_birth",
+      "fit": "acf_optimized",
+      "lag1_observed": 0.41316147046201157,
+      "lag1_median": 0.5703314332774962,
+      "lag1_q2.5": 0.5677490478332416,
+      "lag1_q97.5": 0.5728553305839392,
+      "mae_fit": 0.04692314775048551,
+      "rmse_fit": 0.059571563476358017,
+      "coverage_fit": 0.0,
+      "mae_all": 0.03189995027621371,
+      "rmse_all": 0.04435389250110136,
+      "coverage_all": 0.0
+    }
+  ],
+  "runtime_minutes": 5.454453833897909
+}

@@ -1,5 +1,19 @@
 {
-  "data_path": "df_UMIK_allSources.csv",
+  "model": "loglogistic_mixed_adder_sizer_with_endpoint_residual",
+  "sampled_parameters": [
+    "p_star",
+    "omega2",
+    "eta",
+    "mu_alpha",
+    "sigma_alpha",
+    "mu_f",
+    "sigma_f",
+    "mu_epsilon",
+    "sigma_epsilon"
+  ],
+  "derived_parameters": [
+    "u"
+  ],
   "sugars": [
     "Ace",
     "DMa",
@@ -11,24 +25,35 @@
     "Suc",
     "Xyl"
   ],
-  "n_walkers": 40,
-  "burn_steps": 1000,
-  "n_steps": 3000,
-  "thin": 5,
-  "random_seed": 42,
-  "sim_lineages": 40,
-  "sim_generations": 80,
-  "acf_max_lag": 30,
-  "division_time_bins": 25,
-  "other_bins": 40,
-  "parameter_names": [
-    "u",
-    "v",
-    "omega2",
-    "mu_alpha",
-    "sigma_alpha",
-    "mu_f",
-    "sigma_f"
-  ],
-  "root_output_dir": "outputs\\batch_all_sugars"
+  "single_sugar_run_config": {
+    "walkers": 40,
+    "burn": 1000,
+    "steps": 3000,
+    "thin": 5,
+    "seed": 42,
+    "sim_lineages": 40,
+    "sim_generations": 80,
+    "acf_max_lag": 30,
+    "predictive_replicates": 50
+  },
+  "expected_files_per_sugar": [
+    "acf_comparison.png",
+    "acf_observation_matched.csv",
+    "acf_observation_matched.png",
+    "added_size_survival.png",
+    "comparison_metrics.csv",
+    "corner_plot.png",
+    "derived_physical_posterior_summary.csv",
+    "diagnostics.json",
+    "endpoint_residual_diagnostics.png",
+    "flat_chain.csv",
+    "flat_log_probability.csv",
+    "posterior_predictive_comparison.png",
+    "posterior_predictive_simulation.csv",
+    "posterior_summary.csv",
+    "reconstructed_transitions.csv",
+    "replicated_predictive_metrics.csv",
+    "replicated_predictive_summary.csv",
+    "trace_plots.png"
+  ]
 }

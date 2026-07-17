@@ -1,0 +1,7 @@
+{
+  "min_length": 8,
+  "replicates": 100,
+  "bootstrap": 2000,
+  "seed": 842100,
+  "output_dir": "/Users/albertca/laboratory-computational-physics-mode-b/projects/microbial-growth/outputs/summary"
+}

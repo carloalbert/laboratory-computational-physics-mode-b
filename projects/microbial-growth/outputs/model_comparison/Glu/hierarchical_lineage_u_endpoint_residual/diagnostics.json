@@ -1,0 +1,169 @@
+{
+  "sugar": "Glu",
+  "model": "hierarchical_lineage_u_endpoint_residual",
+  "lineage_scale_distribution": "log(u_l) ~ Normal(log(u_bar), sigma_log_u^2)",
+  "u_bar_relation": "u_bar = p_star + eta * birth_pivot",
+  "birth_pivot": 2.556242664763632,
+  "quadrature_order": 24,
+  "quadrature_log_likelihood_check": {
+    "24": -4151.42027339128,
+    "32": -4151.420275663187,
+    "48": -4151.420277241323,
+    "64": -4151.420277240796,
+    "80": -4151.420277240796
+  },
+  "n_observations": 6504,
+  "n_transitions": 6151,
+  "n_observed_lineages": 303,
+  "n_transition_lineages": 295,
+  "mle": {
+    "success": true,
+    "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+    "log_marginal_division_likelihood": -4151.410181587851,
+    "starts": 5
+  },
+  "common_u_map_division_log_likelihood": -4199.725228798499,
+  "marginal_log_likelihood_gain_at_mle": 48.31504721064812,
+  "mean_acceptance_fraction": 0.513,
+  "autocorr_time": {
+    "p_star": 21.94643961945259,
+    "omega2": 18.972835845621955,
+    "eta": 19.60998758211232,
+    "sigma_log_u": 23.674619843861688
+  },
+  "acf_metrics": {
+    "iid_time_mae_lags_1_30": 0.016374086102123177,
+    "iid_time_lag1_observed": 0.0836848783936438,
+    "iid_time_lag1_median": -0.09544707086865421,
+    "iid_time_covered_lags": 22,
+    "iid_length_birth_mae_lags_1_30": 0.09637344590042138,
+    "iid_length_birth_lag1_observed": 0.41316147046201157,
+    "iid_length_birth_lag1_median": 0.3639693486452089,
+    "iid_length_birth_covered_lags": 2,
+    "replay_time_mae_lags_1_30": 0.010157591215812993,
+    "replay_time_lag1_observed": 0.0836848783936438,
+    "replay_time_lag1_median": 0.13886289839896965,
+    "replay_time_covered_lags": 22,
+    "replay_length_birth_mae_lags_1_30": 0.0533637011463673,
+    "replay_length_birth_lag1_observed": 0.41316147046201157,
+    "replay_length_birth_lag1_median": 0.43059873157884837,
+    "replay_length_birth_covered_lags": 3
+  },
+  "lineage_metrics": {
+    "pearson_u_median_vs_mean_birth": 0.8118667273394056
+  },
+  "u_bar_posterior": {
+    "parameter": "u_bar",
+    "mode": 2.05830652803758,
+    "mean": 2.0601155776314455,
+    "median": 2.0597363986137935,
+    "ci_2.5": 1.9941189940031785,
+    "ci_97.5": 2.1288651952722533,
+    "std": 0.03413531217920257
+  },
+  "sigma_log_u_posterior": {
+    "mode": 0.05610695379593307,
+    "mean": 0.057128080182934714,
+    "median": 0.057026142913105704,
+    "ci_2.5": 0.04891275868276424,
+    "ci_97.5": 0.06576669508726829,
+    "std": 0.0042810326850349755
+  },
+  "run_config": {
+    "sugar": "Glu",
+    "walkers": 32,
+    "burn": 600,
+    "steps": 1500,
+    "thin": 3,
+    "quadrature_order": 24,
+    "acf_replicates": 300,
+    "marginal_replicates": 100,
+    "acf_max_lag": 30,
+    "seed": 4207,
+    "output_dir": "/Users/albertca/laboratory-computational-physics-mode-b/projects/microbial-growth/outputs/model_comparison/Glu/hierarchical_lineage_u_endpoint_residual"
+  },
+  "runtime_minutes": 7.248844031492869,
+  "n_lineage_scale_summary_rows": 303,
+  "marginal_summary": {
+    "added_size": {
+      "mean_ratio_median": 0.9977702843204098,
+      "mean_ratio_q2_5": 0.989497335712499,
+      "mean_ratio_q97_5": 1.0038545699423356,
+      "sd_ratio_median": 1.0016618978083809,
+      "sd_ratio_q2_5": 0.9708261461986356,
+      "sd_ratio_q97_5": 1.0435048829436795,
+      "ks_median": 0.016864214020940405,
+      "ks_q2_5": 0.010424246759944432,
+      "ks_q97_5": 0.028236626090858523
+    },
+    "alpha": {
+      "mean_ratio_median": 0.9998832085389617,
+      "mean_ratio_q2_5": 0.9919641109636878,
+      "mean_ratio_q97_5": 1.0079417387414573,
+      "sd_ratio_median": 1.1181949142447944,
+      "sd_ratio_q2_5": 1.0915607046009341,
+      "sd_ratio_q97_5": 1.1486829004454497,
+      "ks_median": 0.10355166051660517,
+      "ks_q2_5": 0.08999461869618695,
+      "ks_q97_5": 0.1143181119311193
+    },
+    "epsilon": {
+      "mean_ratio_median": 1.0739458107190791,
+      "mean_ratio_q2_5": 1.0390541928713273,
+      "mean_ratio_q97_5": 1.1077701729546472,
+      "sd_ratio_median": 0.6804761544923823,
+      "sd_ratio_q2_5": 0.6490353894358283,
+      "sd_ratio_q97_5": 0.7182068376590381,
+      "ks_median": 0.02761222387463673,
+      "ks_q2_5": 0.02198990996473938,
+      "ks_q97_5": 0.03933105308129979
+    },
+    "f": {
+      "mean_ratio_median": 0.9999813490307383,
+      "mean_ratio_q2_5": 0.9972299742487065,
+      "mean_ratio_q97_5": 1.0021378450533172,
+      "sd_ratio_median": 0.999539474817525,
+      "sd_ratio_q2_5": 0.9766006607168167,
+      "sd_ratio_q97_5": 1.0210527097763626,
+      "ks_median": 0.017681426814268143,
+      "ks_q2_5": 0.009905442804428044,
+      "ks_q97_5": 0.0326991082410824
+    },
+    "length_birth": {
+      "mean_ratio_median": 0.9908148559154325,
+      "mean_ratio_q2_5": 0.9814322002239758,
+      "mean_ratio_q97_5": 0.9994374773243637,
+      "sd_ratio_median": 0.8394697570347412,
+      "sd_ratio_q2_5": 0.8112279084865693,
+      "sd_ratio_q97_5": 0.8659349694130793,
+      "ks_median": 0.05327490774907749,
+      "ks_q2_5": 0.041716635916359164,
+      "ks_q97_5": 0.06358779212792127
+    },
+    "length_final": {
+      "mean_ratio_median": 0.9978738798829101,
+      "mean_ratio_q2_5": 0.9888163168023154,
+      "mean_ratio_q97_5": 1.0056130506561716,
+      "sd_ratio_median": 0.9263095062293745,
+      "sd_ratio_q2_5": 0.8894213677789208,
+      "sd_ratio_q97_5": 0.9584484917081326,
+      "ks_median": 0.03775930043075427,
+      "ks_q2_5": 0.026973006419220426,
+      "ks_q97_5": 0.0559695390483412
+    },
+    "time": {
+      "mean_ratio_median": 0.9508160301008095,
+      "mean_ratio_q2_5": 0.9403046356848677,
+      "mean_ratio_q97_5": 0.9588861214597237,
+      "sd_ratio_median": 0.6133449312967649,
+      "sd_ratio_q2_5": 0.5982569648681842,
+      "sd_ratio_q97_5": 0.6371355308588271,
+      "ks_median": 0.1552121771217712,
+      "ks_q2_5": 0.14237392373923738,
+      "ks_q97_5": 0.1645372078720787
+    }
+  },
+  "acf_table_rows": 31,
+  "residual_df": 4.0,
+  "common_u_comparison_rows": 18
+}
