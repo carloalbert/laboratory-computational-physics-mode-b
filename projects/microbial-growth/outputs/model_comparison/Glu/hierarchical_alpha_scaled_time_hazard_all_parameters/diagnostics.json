@@ -1,0 +1,65 @@
+{
+  "model": "hierarchical_alpha_scaled_time_hazard_all_parameters",
+  "sugar": "Glu",
+  "hazard": "h(t|b,alpha)=alpha*omega2_l*(p(t)/u_l)^eta_l/(1+(p(t)/u_l)^eta_l)",
+  "hierarchy": "(log u_l, log omega2_l, log eta_l) jointly Gaussian with full covariance",
+  "inference": "Laplace empirical Bayes using lineage likelihood estimates and Hessians",
+  "minimum_observations_for_lineage_likelihood": 5,
+  "n_lineages": 303,
+  "n_lineages_in_population_fit": 276,
+  "population_optimizer_success": true,
+  "population_optimizer_message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+  "population_median": {
+    "u": 1.4420925805726206,
+    "omega2": 11.461110728052715,
+    "eta": 8.833776285775382
+  },
+  "population_log_sd": {
+    "u": 0.0628915429133052,
+    "omega2": 0.20825812240657757,
+    "eta": 0.2732020762470898
+  },
+  "population_cv": {
+    "u": 0.06295378364557486,
+    "omega2": 0.21053677341566873,
+    "eta": 0.2783801509056241
+  },
+  "population_log_correlation": {
+    "u": {
+      "u": 1.0,
+      "omega2": 0.4682388721462628,
+      "eta": -0.38934419700856554
+    },
+    "omega2": {
+      "u": 0.4682388721462628,
+      "omega2": 1.0,
+      "eta": 0.07735217516809077
+    },
+    "eta": {
+      "u": -0.38934419700856554,
+      "omega2": 0.07735217516809077,
+      "eta": 1.0
+    }
+  },
+  "acf_metrics": {
+    "time": {
+      "mae_lags_1_to_30": 0.011956755762560774,
+      "covered_lags": 22,
+      "lag1_observed": 0.0836848783936438,
+      "lag1_median": 0.1681180341701939
+    },
+    "length_birth": {
+      "mae_lags_1_to_30": 0.046972128525082764,
+      "covered_lags": 3,
+      "lag1_observed": 0.41316147046201157,
+      "lag1_median": 0.515584737260945
+    }
+  },
+  "run_config": {
+    "min_lineage_observations": 5,
+    "acf_replicates": 300,
+    "acf_max_lag": 30,
+    "seed": 4271
+  },
+  "runtime_minutes": 0.965598980585734
+}

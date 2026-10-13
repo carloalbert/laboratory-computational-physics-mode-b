@@ -532,6 +532,57 @@ MPLCONFIGDIR=/tmp/mpl /private/tmp/microbial-growth-venv/bin/python \
   projects/microbial-growth/scripts/compare_glu_lineage_hierarchies.py
 ```
 
+### Joint lineage-specific scale and shape
+
+The Glu-only joint hierarchy lets both division parameters persist by lineage,
+with independent population laws
+
+\[
+\log u_\ell\sim\mathcal N(\log\bar u,\sigma_{\log u}^2),\qquad
+\log\omega_{2,\ell}\sim
+\mathcal N(\log\bar\omega_2,\sigma_{\log\omega_2}^2).
+\]
+
+Their two-dimensional lineage integral is evaluated with product
+Gauss--Hermite quadrature. Posterior ACF prediction preserves every observed
+lineage's initial birth size, length, growth-rate sequence, and division-factor
+sequence. Run it with
+
+```bash
+MPLCONFIGDIR=/tmp/mpl /private/tmp/microbial-growth-venv/bin/python \
+  projects/microbial-growth/scripts/run_hierarchical_lineage_u_omega2.py
+```
+
+Results are written to
+`outputs/model_comparison/Glu/hierarchical_lineage_u_omega2_endpoint_residual/`.
+
+### Hierarchical alpha-scaled time hazard
+
+For the physical-time hazard
+
+\[
+h_\ell(t\mid b,\alpha)=\alpha\omega_{2,\ell}
+\frac{[p(t)/u_\ell]^{\eta_\ell}}
+{1+[p(t)/u_\ell]^{\eta_\ell}},
+\qquad p(t)=b(e^{\alpha t}-1),
+\]
+
+the Glu-only hierarchical fit lets all three hazard parameters vary by lineage.
+Their logarithms follow a joint Gaussian population distribution with a full
+covariance matrix. The scalable fit uses a Laplace empirical-Bayes
+approximation: individual lineage likelihoods and Hessians are combined by
+marginal maximum likelihood, retaining uncertainty for short lineages.
+Posterior prediction replays each lineage's measured alpha and division-factor
+sequences. Run it with
+
+```bash
+MPLCONFIGDIR=/tmp/mpl /private/tmp/microbial-growth-venv/bin/python \
+  projects/microbial-growth/scripts/run_hierarchical_alpha_scaled_time_hazard.py
+```
+
+Results are written to
+`outputs/model_comparison/Glu/hierarchical_alpha_scaled_time_hazard_all_parameters/`.
+
 ## Sugars analyzed
 
 ```text

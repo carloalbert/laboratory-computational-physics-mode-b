@@ -1,0 +1,47 @@
+{
+  "purpose": "unrestricted lineage-parameter structural sanity check; objective is birth-ACF MSE only",
+  "hazard": "h_l(t)=alpha*omega2_l*(p/u_l)^eta_l/(1+(p/u_l)^eta_l)",
+  "optimized_parameters": 858,
+  "total_glu_lineages": 303,
+  "acf_contributing_lineages": 286,
+  "excluded_short_lineages": 17,
+  "fit_lags": "1..30",
+  "training_replicates": 3,
+  "initial_training_mse": 0.0009574670461489194,
+  "optimized_training_mse": 0.0009574670461489194,
+  "training_mse_ratio": 1.0,
+  "validation_mse": 0.0010421478702744753,
+  "validation_mae": 0.02843190578280707,
+  "parameter_summary": {
+    "u": {
+      "median": 19.28336925217112,
+      "q2.5": 18.654621246108594,
+      "q97.5": 19.85674725619271,
+      "at_lower_bound": 0,
+      "at_upper_bound": 10
+    },
+    "omega2": {
+      "median": 0.8972714538457047,
+      "q2.5": 0.3385615689144993,
+      "q97.5": 2.868216950698659,
+      "at_lower_bound": 0,
+      "at_upper_bound": 0
+    },
+    "eta": {
+      "median": 0.23235342675648896,
+      "q2.5": 0.21468946861629842,
+      "q97.5": 0.24439493383264804,
+      "at_lower_bound": 0,
+      "at_upper_bound": 0
+    }
+  },
+  "run_config": {
+    "fit_max_lag": 30,
+    "training_replicates": 3,
+    "validation_replicates": 100,
+    "sweeps": 0,
+    "maxiter_per_lineage": 10,
+    "seed": 4319
+  },
+  "runtime_minutes": 3.5161585847536725
+}

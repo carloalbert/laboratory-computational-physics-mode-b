@@ -1,0 +1,64 @@
+{
+  "purpose": "penalized-likelihood structural sanity check, not posterior inference",
+  "parameterization": "six calibration parameters: three population log-medians and three multipliers of fitted lineage log-deviations",
+  "objective": "(baseline_logL-logL)/N + acf_weight*(time_ACF_MSE+birth_ACF_MSE)/baseline_ACF_MSE",
+  "acf_weight": 1000.0,
+  "baseline_log_likelihood": 1649.9994512041765,
+  "optimized_log_likelihood": -12753.243100730253,
+  "log_likelihood_change": -14403.242551934429,
+  "baseline_training_acf_mse": 0.0039054064822417627,
+  "optimized_training_acf_mse": 0.0022982622714254747,
+  "acf_mse_ratio": 0.5884822186565936,
+  "optimizer": {
+    "success": true,
+    "message": "Optimization terminated successfully.",
+    "evaluations": 2168,
+    "objective": 590.7056275099333
+  },
+  "optimized_population_median": {
+    "u": 19.27227745441758,
+    "omega2": 0.8568236709050077,
+    "eta": 0.23173691429260557
+  },
+  "lineage_deviation_multipliers": {
+    "u": 0.41788638853605625,
+    "omega2": 3.9964773187740583,
+    "eta": 0.15233687993955794
+  },
+  "metrics": [
+    {
+      "fit": "baseline",
+      "variable": "time",
+      "mae_lags_1_30": 0.012304334900042173,
+      "rmse_lags_1_15": 0.02639147046726484
+    },
+    {
+      "fit": "optimized",
+      "variable": "time",
+      "mae_lags_1_30": 0.009570172091912302,
+      "rmse_lags_1_15": 0.02577191291442752
+    },
+    {
+      "fit": "baseline",
+      "variable": "length_birth",
+      "mae_lags_1_30": 0.04640892136850187,
+      "rmse_lags_1_15": 0.057766806226182355
+    },
+    {
+      "fit": "optimized",
+      "variable": "length_birth",
+      "mae_lags_1_30": 0.030321352014776558,
+      "rmse_lags_1_15": 0.03817264691399513
+    }
+  ],
+  "runtime_minutes": 5.743817786375682,
+  "run_config": {
+    "fit_max_lag": 15,
+    "plot_max_lag": 30,
+    "acf_weight": 1000.0,
+    "validation_replicates": 300,
+    "maxiter": 36,
+    "popsize": 8,
+    "seed": 4289
+  }
+}
