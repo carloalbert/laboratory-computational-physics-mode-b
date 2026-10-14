@@ -1,0 +1,4 @@
+# Retained Glu workflow only. Root requirements also support historical MCMC.
+numpy>=2.0
+pandas>=2.0
+Pillow>=10.1

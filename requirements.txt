@@ -7,3 +7,4 @@ corner
 jupyter
 notebook
 ipykernel
+Pillow>=10.1

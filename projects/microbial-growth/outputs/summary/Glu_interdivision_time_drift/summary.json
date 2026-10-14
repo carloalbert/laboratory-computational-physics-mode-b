@@ -1,0 +1,80 @@
+{
+  "question": "Do Glu inter-division times drift across each observed lineage?",
+  "interpretation": "A negative early-to-late change means divisions become faster as absolute time from lineage start increases.",
+  "n_observations": 6504,
+  "n_lineages_total": 303,
+  "n_lineages_analyzed": 276,
+  "minimum_observations": 6,
+  "early_late_definition": "means of the first and final thirds of each lineage",
+  "metrics": {
+    "late_minus_early_time_hours": {
+      "mean": -0.13032705016661322,
+      "mean_ci95": [
+        -0.1936573567624527,
+        -0.06995193099612895
+      ],
+      "median": -0.11111111111333338,
+      "fraction_negative": 0.6231884057971014,
+      "sign_test_two_sided_p": 2.052979581728978e-05
+    },
+    "late_minus_early_growth_exponent": {
+      "mean": -0.029448728721464063,
+      "mean_ci95": [
+        -0.03633529262080717,
+        -0.022322346905589527
+      ],
+      "median": -0.03780575255119975,
+      "fraction_negative": 0.7427536231884058,
+      "sign_test_two_sided_p": 3.015967474991974e-16
+    },
+    "late_minus_early_alpha": {
+      "mean": 0.023951226064846835,
+      "mean_ci95": [
+        0.010798440161178622,
+        0.037320644900270115
+      ],
+      "median": 0.020512321879639694,
+      "fraction_negative": 0.42391304347826086,
+      "sign_test_two_sided_p": 0.01344603955213851
+    },
+    "time_slope_per_elapsed_hour": {
+      "mean": -0.011469768314079183,
+      "mean_ci95": [
+        -0.015841467641442095,
+        -0.007192565650106792
+      ],
+      "median": -0.009901048126941989,
+      "fraction_negative": 0.6884057971014492,
+      "sign_test_two_sided_p": 3.524545314573695e-10
+    }
+  },
+  "fixed_effect_time_trend": {
+    "unadjusted_hours_per_elapsed_hour": -0.011227199883114401,
+    "unadjusted_ci95": [
+      -0.014458682760968827,
+      -0.008302520306701927
+    ],
+    "alpha_adjusted_hours_per_elapsed_hour": -0.0040955044262349334,
+    "alpha_adjusted_ci95": [
+      -0.005594399790640871,
+      -0.0026055825077466815
+    ]
+  },
+  "fixed_effect_time_trend_after_dropping_first_cycle": {
+    "unadjusted_hours_per_elapsed_hour": -0.009082220827147887,
+    "unadjusted_ci95": [
+      -0.011954531061181332,
+      -0.00630749076369705
+    ],
+    "alpha_adjusted_hours_per_elapsed_hour": -0.0034453729477199268,
+    "alpha_adjusted_ci95": [
+      -0.004800989204504882,
+      -0.0020905186273921738
+    ]
+  },
+  "run_config": {
+    "bootstrap_replicates": 10000,
+    "seed": 42,
+    "data": "/Users/albertca/laboratory-computational-physics-mode-b/projects/microbial-growth/data/processed/processed_input_data.csv"
+  }
+}

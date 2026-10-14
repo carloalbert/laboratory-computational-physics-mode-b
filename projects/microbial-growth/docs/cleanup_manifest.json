@@ -1,0 +1,389 @@
+{
+  "status": "completed",
+  "recovery_root": "/private/tmp/microbial-growth-cleanup-wqjmDzbK",
+  "scope": "Superseded Glu experiment outputs and associated replay summaries; data, all historical source, current fit/comparator, nine-sugar reference fits, and empirical drift diagnostics retained.",
+  "removed_directories": 24,
+  "removed_files_including_contents": 376,
+  "removed_bytes": 99380906,
+  "items": [
+    {
+      "path": "outputs/model_comparison/Glu/alpha_scaled_hill_time_hazard",
+      "kind": "directory",
+      "bytes": 8100981,
+      "files": 32,
+      "recovery_path": "model_comparison/Glu/alpha_scaled_hill_time_hazard"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/birth_size_dependent_time_hazard_acf_only",
+      "kind": "directory",
+      "bytes": 25688,
+      "files": 5,
+      "recovery_path": "model_comparison/Glu/birth_size_dependent_time_hazard_acf_only"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/birth_size_dependent_time_hazard_acf_only_wide",
+      "kind": "directory",
+      "bytes": 616877,
+      "files": 21,
+      "recovery_path": "model_comparison/Glu/birth_size_dependent_time_hazard_acf_only_wide"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/birth_size_dependent_time_hazard_effective_f",
+      "kind": "directory",
+      "bytes": 22459,
+      "files": 5,
+      "recovery_path": "model_comparison/Glu/birth_size_dependent_time_hazard_effective_f"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/conditional_effective_jumps",
+      "kind": "directory",
+      "bytes": 324044,
+      "files": 14,
+      "recovery_path": "model_comparison/Glu/conditional_effective_jumps"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/cycle_specific_birth_transitions",
+      "kind": "directory",
+      "bytes": 26209158,
+      "files": 20,
+      "recovery_path": "model_comparison/Glu/cycle_specific_birth_transitions"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/decaying_memory_time_hazard_shared",
+      "kind": "directory",
+      "bytes": 996583,
+      "files": 12,
+      "recovery_path": "model_comparison/Glu/decaying_memory_time_hazard_shared"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/drift_ar1_births",
+      "kind": "directory",
+      "bytes": 376621,
+      "files": 12,
+      "recovery_path": "model_comparison/Glu/drift_ar1_births"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/elapsed_birth_transitions",
+      "kind": "directory",
+      "bytes": 5812749,
+      "files": 23,
+      "recovery_path": "model_comparison/Glu/elapsed_birth_transitions"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/empirical_birth_transitions",
+      "kind": "directory",
+      "bytes": 1340086,
+      "files": 14,
+      "recovery_path": "model_comparison/Glu/empirical_birth_transitions"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/empirical_conditional_time_density",
+      "kind": "directory",
+      "bytes": 2046695,
+      "files": 11,
+      "recovery_path": "model_comparison/Glu/empirical_conditional_time_density"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/empirical_detrended_ar1",
+      "kind": "directory",
+      "bytes": 625458,
+      "files": 8,
+      "recovery_path": "model_comparison/Glu/empirical_detrended_ar1"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/factorization_check",
+      "kind": "directory",
+      "bytes": 1989146,
+      "files": 9,
+      "recovery_path": "model_comparison/Glu/factorization_check"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/generative_ar_growth_iid_factors",
+      "kind": "directory",
+      "bytes": 2245565,
+      "files": 15,
+      "recovery_path": "model_comparison/Glu/generative_ar_growth_iid_factors"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/hierarchical_alpha_scaled_time_hazard_all_parameters",
+      "kind": "directory",
+      "bytes": 771486,
+      "files": 26,
+      "recovery_path": "model_comparison/Glu/hierarchical_alpha_scaled_time_hazard_all_parameters"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/hierarchical_lineage_omega2_endpoint_residual",
+      "kind": "directory",
+      "bytes": 10135919,
+      "files": 21,
+      "recovery_path": "model_comparison/Glu/hierarchical_lineage_omega2_endpoint_residual"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/hierarchical_lineage_u_endpoint_residual",
+      "kind": "directory",
+      "bytes": 9773695,
+      "files": 21,
+      "recovery_path": "model_comparison/Glu/hierarchical_lineage_u_endpoint_residual"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/hierarchical_lineage_u_omega2_endpoint_residual",
+      "kind": "directory",
+      "bytes": 1106129,
+      "files": 7,
+      "recovery_path": "model_comparison/Glu/hierarchical_lineage_u_omega2_endpoint_residual"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/joint_growth_timing",
+      "kind": "directory",
+      "bytes": 1679631,
+      "files": 12,
+      "recovery_path": "model_comparison/Glu/joint_growth_timing"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/lineage_hierarchy_birth_acf_comparison.pdf",
+      "kind": "file",
+      "bytes": 21923,
+      "files": 1,
+      "recovery_path": "model_comparison/Glu/lineage_hierarchy_birth_acf_comparison.pdf"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/lineage_hierarchy_birth_acf_comparison.png",
+      "kind": "file",
+      "bytes": 119502,
+      "files": 1,
+      "recovery_path": "model_comparison/Glu/lineage_hierarchy_birth_acf_comparison.png"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/lineage_hierarchy_comparison.csv",
+      "kind": "file",
+      "bytes": 965,
+      "files": 1,
+      "recovery_path": "model_comparison/Glu/lineage_hierarchy_comparison.csv"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/markov_memory_check",
+      "kind": "directory",
+      "bytes": 7129341,
+      "files": 10,
+      "recovery_path": "model_comparison/Glu/markov_memory_check"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/parsimonious_joint_hazard_screen",
+      "kind": "directory",
+      "bytes": 378802,
+      "files": 15,
+      "recovery_path": "model_comparison/Glu/parsimonious_joint_hazard_screen"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/second_order_birth_transitions",
+      "kind": "directory",
+      "bytes": 3253762,
+      "files": 22,
+      "recovery_path": "model_comparison/Glu/second_order_birth_transitions"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/stationary_memory_time_hazard_shared",
+      "kind": "directory",
+      "bytes": 24845,
+      "files": 6,
+      "recovery_path": "model_comparison/Glu/stationary_memory_time_hazard_shared"
+    },
+    {
+      "path": "outputs/model_comparison/Glu/stationary_memory_time_hazard_shared_effective_f",
+      "kind": "directory",
+      "bytes": 23209,
+      "files": 5,
+      "recovery_path": "model_comparison/Glu/stationary_memory_time_hazard_shared_effective_f"
+    },
+    {
+      "path": "outputs/summary/Glu_Lac_latent_setpoint_acf.pdf",
+      "kind": "file",
+      "bytes": 29066,
+      "files": 1,
+      "recovery_path": "summary/Glu_Lac_latent_setpoint_acf.pdf"
+    },
+    {
+      "path": "outputs/summary/Glu_Lac_latent_setpoint_acf.png",
+      "kind": "file",
+      "bytes": 236653,
+      "files": 1,
+      "recovery_path": "summary/Glu_Lac_latent_setpoint_acf.png"
+    },
+    {
+      "path": "outputs/summary/Glu_Lac_latent_setpoint_config.json",
+      "kind": "file",
+      "bytes": 314,
+      "files": 1,
+      "recovery_path": "summary/Glu_Lac_latent_setpoint_config.json"
+    },
+    {
+      "path": "outputs/summary/Glu_Lac_latent_setpoint_summary.csv",
+      "kind": "file",
+      "bytes": 1161,
+      "files": 1,
+      "recovery_path": "summary/Glu_Lac_latent_setpoint_summary.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_latent_setpoint_acf.csv",
+      "kind": "file",
+      "bytes": 9334,
+      "files": 1,
+      "recovery_path": "summary/Glu_latent_setpoint_acf.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_latent_setpoint_optimization_history.csv",
+      "kind": "file",
+      "bytes": 909,
+      "files": 1,
+      "recovery_path": "summary/Glu_latent_setpoint_optimization_history.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag1_acf_vs_u.csv",
+      "kind": "file",
+      "bytes": 39948,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag1_acf_vs_u.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag1_acf_vs_u.pdf",
+      "kind": "file",
+      "bytes": 30004,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag1_acf_vs_u.pdf"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag1_acf_vs_u.png",
+      "kind": "file",
+      "bytes": 204352,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag1_acf_vs_u.png"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag1_acf_vs_u_summary.json",
+      "kind": "file",
+      "bytes": 684,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag1_acf_vs_u_summary.json"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag1_hierarchical_u_replay.csv",
+      "kind": "file",
+      "bytes": 4238114,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag1_hierarchical_u_replay.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag1_hierarchical_u_replay.pdf",
+      "kind": "file",
+      "bytes": 22356,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag1_hierarchical_u_replay.pdf"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag1_hierarchical_u_replay.png",
+      "kind": "file",
+      "bytes": 168533,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag1_hierarchical_u_replay.png"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag1_hierarchical_u_replay_stats.csv",
+      "kind": "file",
+      "bytes": 99893,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag1_hierarchical_u_replay_stats.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag1_hierarchical_u_replay_summary.json",
+      "kind": "file",
+      "bytes": 2196,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag1_hierarchical_u_replay_summary.json"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag2_hierarchical_u_replay.csv",
+      "kind": "file",
+      "bytes": 4274072,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag2_hierarchical_u_replay.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag2_hierarchical_u_replay.pdf",
+      "kind": "file",
+      "bytes": 22970,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag2_hierarchical_u_replay.pdf"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag2_hierarchical_u_replay.png",
+      "kind": "file",
+      "bytes": 200766,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag2_hierarchical_u_replay.png"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag2_hierarchical_u_replay_stats.csv",
+      "kind": "file",
+      "bytes": 100808,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag2_hierarchical_u_replay_stats.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag2_hierarchical_u_replay_summary.json",
+      "kind": "file",
+      "bytes": 2205,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag2_hierarchical_u_replay_summary.json"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag3_hierarchical_u_replay.csv",
+      "kind": "file",
+      "bytes": 4211552,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag3_hierarchical_u_replay.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag3_hierarchical_u_replay.pdf",
+      "kind": "file",
+      "bytes": 22669,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag3_hierarchical_u_replay.pdf"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag3_hierarchical_u_replay.png",
+      "kind": "file",
+      "bytes": 196733,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag3_hierarchical_u_replay.png"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag3_hierarchical_u_replay_stats.csv",
+      "kind": "file",
+      "bytes": 101754,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag3_hierarchical_u_replay_stats.csv"
+    },
+    {
+      "path": "outputs/summary/Glu_lineage_birth_lag3_hierarchical_u_replay_summary.json",
+      "kind": "file",
+      "bytes": 2214,
+      "files": 1,
+      "recovery_path": "summary/Glu_lineage_birth_lag3_hierarchical_u_replay_summary.json"
+    },
+    {
+      "path": "outputs/summary/Lac_latent_setpoint_acf.csv",
+      "kind": "file",
+      "bytes": 9346,
+      "files": 1,
+      "recovery_path": "summary/Lac_latent_setpoint_acf.csv"
+    },
+    {
+      "path": "outputs/summary/Lac_latent_setpoint_optimization_history.csv",
+      "kind": "file",
+      "bytes": 981,
+      "files": 1,
+      "recovery_path": "summary/Lac_latent_setpoint_optimization_history.csv"
+    }
+  ],
+  "documentation_backup": "documentation/ contains pre-cleanup README and repository-tree copies. Recovery is local temporary storage, not a permanent remote backup."
+}

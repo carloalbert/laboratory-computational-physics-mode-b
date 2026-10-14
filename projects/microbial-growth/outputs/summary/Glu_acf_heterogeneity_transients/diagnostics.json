@@ -1,0 +1,87 @@
+{
+  "fits": {
+    "train": {
+      "Common_AR1": {
+        "rho": 0.7000000000000001
+      },
+      "Heterogeneous_AR1": {
+        "fast": 0.47500000000000003,
+        "slow": 0.8250000000000001,
+        "fraction_fast": 0.5
+      },
+      "Two_modes_within": {
+        "fast": 0.12,
+        "slow": 0.988,
+        "weight_fast": 0.07500000000000001
+      }
+    },
+    "all": {
+      "Common_AR1": {
+        "rho": 0.7250000000000001
+      },
+      "Heterogeneous_AR1": {
+        "fast": 0.5,
+        "slow": 0.8250000000000001,
+        "fraction_fast": 0.5
+      },
+      "Two_modes_within": {
+        "fast": 0.16999999999999998,
+        "slow": 0.988,
+        "weight_fast": 0.07500000000000001
+      }
+    }
+  },
+  "n_lineages": 276,
+  "n_observations": 6441,
+  "score": "Scale-free restricted Gaussian covariance likelihood on log birth, with separate nuisance intercept and scale in each lineage. Constants shared by models omitted. This scores within-lineage covariance shape, not one-step predictive birth density.",
+  "caveats": "Exploratory reused validation split. Stationary two-mode covariance is not a deterministic transient. Detrending can remove stationary slow fluctuations. Parametric checks condition on fitted nuisance parameters and do not include fitting uncertainty.",
+  "heldout_comparisons": {
+    "Heterogeneous_AR1 minus Common_AR1": {
+      "n_lineages": 67,
+      "mean_gain_per_lineage": 0.02053282594334014,
+      "total_gain": 1.3756993382037894,
+      "ci95": [
+        -0.09966669619647286,
+        0.16159809135765374
+      ]
+    },
+    "Two_modes_within minus Common_AR1": {
+      "n_lineages": 67,
+      "mean_gain_per_lineage": 0.6570513766057563,
+      "total_gain": 44.022442232585675,
+      "ci95": [
+        0.3005494669351538,
+        1.0332356423596314
+      ]
+    },
+    "Two_modes_within minus Heterogeneous_AR1": {
+      "n_lineages": 67,
+      "mean_gain_per_lineage": 0.6365185506624162,
+      "total_gain": 42.64674289438189,
+      "ci95": [
+        0.30880385245864356,
+        0.9738517030065876
+      ]
+    }
+  },
+  "aligned_common_trend": {
+    "raw": {
+      "common_exp_tau_generations": 80.0,
+      "common_exp_amplitude": -2.904714297453592
+    },
+    "log": {
+      "common_exp_tau_generations": 80.0,
+      "common_exp_amplitude": -1.0909368299288111
+    }
+  },
+  "crossfit_common_trend": {
+    "train": {
+      "tau": 80.0,
+      "amplitude": -2.8318716659001826
+    },
+    "validation": {
+      "tau": 80.0,
+      "amplitude": -2.8318716659001826
+    }
+  }
+}

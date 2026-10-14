@@ -1,34 +1,27 @@
-# Summary outputs
+# Reference summaries and empirical diagnostics
 
-This folder contains the aggregate results from the current re-parameterized
-log-logistic endpoint-residual model for all nine sugars.  The detailed files
-for each fit remain under
-`outputs/model_comparison/<sugar>/loglogistic_endpoint_residual/`.
+These outputs describe the historical nine-sugar endpoint-residual analysis and
+selected empirical checks. They are **not** results from the current Glu
+static-offset model; that model's outputs live
+[here](../model_comparison/Glu/static_offset_detrended_hazard/).
 
-- `all_sugars_diagnostics.csv`: convergence, re-parameterization correlations,
-  and observation-matched lag-1 ACF coverage.
-- `all_sugars_parameter_modes.csv`: one row per sugar and one column per sampled
-  or derived parameter.
-- `all_sugars_posterior_summary.csv`: long-form posterior modes, means, medians,
-  standard deviations, and 95% credible intervals.  The physical scale `u` is
-  included as a derived parameter.
-- `all_sugars_predictive_summary.csv`: long-form summaries of the 50 replicated
-  posterior-predictive diagnostics per sugar.
-- `sugar_parameter_scatter.png`: posterior medians and 95% credible intervals.
-- `all_sugars_acf_lag1.png`: observed lag-1 ACFs against the 500-replicate,
-  observation-matched posterior-predictive intervals.
-- `all_sugars_acf_sheet.png` and `.pdf`: the complete division-time and
-  birth-length ACF curves for every sugar on one sheet.
-- `all_sugars_acf_pairing_comparison.csv`: lag-1 predictive intervals before
-  and after preserving the exact observed `(b0, lineage length)` pairing.
-- `all_sugars_acf_four_variables.png` and `.pdf`: division-time, birth-length,
-  growth-rate, and division-factor ACFs for every sugar.
-- `all_sugars_acf_four_variables_lag1.csv`: observed and predictive lag-1 ACF
-  summaries for those four variables.
-- `run_config.json`: common sampler settings and the expected per-sugar files.
+Retained summary families:
 
-Regenerate this folder after completing all nine fits with:
+- Cross-sugar tables/figures named all_sugars_*, the parameter scatter, and
+  run configuration.
+- Selected parameter relationships.
+- Lineage half-size persistence.
+- Observed Glu birth-size ACF and outlier diagnostics.
+- [Glu ACF heterogeneity/transients](Glu_acf_heterogeneity_transients/).
+- [Glu interdivision-time drift](Glu_interdivision_time_drift/).
 
-```bash
-python scripts/summarize_loglogistic_endpoint_residual.py
-```
+The reference endpoint-residual summary can be regenerated from the repository
+root with:
+
+~~~bash
+python projects/microbial-growth/scripts/summarize_loglogistic_endpoint_residual.py
+~~~
+
+Superseded hierarchical/latent-setpoint replay and ACF-versus-threshold artifacts
+were removed; see the [cleanup manifest](../../docs/cleanup_manifest.json).
+The [project README](../../README.md) describes the retained current workflow.

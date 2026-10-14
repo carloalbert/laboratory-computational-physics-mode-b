@@ -1,51 +1,34 @@
 # Laboratory of Computational Physics — Mode B
 
-This repository contains coursework and project material for **Laboratory of Computational Physics — Mode B**.
+The active project studies microbial growth and stochastic cell division.
 
-## Projects
+Start with the [microbial-growth README](projects/microbial-growth/README.md).
+It describes the current Glu model: an empirically detrended Hill timing hazard
+with a static lineage offset, its fitted parameters, checks, and limitations.
+Earlier experiments are listed briefly; their source remains available.
 
-### Microbial Growth
+## Layout
 
-A Bayesian analysis of microbial growth and division dynamics using lineage data and a modified hazard-function model.
-
-Project folder:
-
-```text
+~~~text
 projects/microbial-growth/
-```
+├── config/        Fixed cohort and validation configuration
+├── data/          Original and processed observations
+├── docs/          Repository map and cleanup manifest
+├── outputs/       Current model, comparator, and reference results
+├── scripts/       Reproducible analysis and historical experiments
+└── src/           Model implementations and shared helpers
+~~~
 
-## Repository structure
+## Current workflow
 
-```text
-laboratory-computational-physics-mode-b/
-├── README.md
-├── requirements.txt
-├── .gitignore
-└── projects/
-    └── microbial-growth/
-        ├── README.md
-        ├── notebooks/
-        ├── data/
-        ├── outputs/
-        ├── src/
-        └── report/
-```
+From this directory:
 
-## Environment
+~~~bash
+python -m pip install -r projects/microbial-growth/requirements.txt
+python projects/microbial-growth/scripts/fit_empirical_detrended_hazard.py
+python projects/microbial-growth/scripts/fit_static_offset_detrended_hazard.py
+python projects/microbial-growth/scripts/plot_static_offset_detrended_hazard.py
+~~~
 
-Create and activate a Python environment, then install the required packages:
-
-```bash
-pip install -r requirements.txt
-```
-
-Then open the notebook inside:
-
-```text
-projects/microbial-growth/notebooks/
-```
-
-## Notes
-
-Large posterior-chain files and generated outputs are stored under the project `outputs/` folder.
-If GitHub rejects a file because it is too large, use Git LFS for that file type.
+See the project README for tests and the full reproduction sequence.
+The root requirements additionally support historical analyses and MCMC.

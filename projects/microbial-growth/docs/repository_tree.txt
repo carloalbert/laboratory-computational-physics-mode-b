@@ -1,30 +1,26 @@
 laboratory-computational-physics-mode-b/
-└── projects/
-    └── microbial-growth/
-        ├── data/
-        │   ├── processed/
-        │   │   └── processed_input_data.csv
-        │   └── raw/
-        ├── docs/
-        ├── notebooks/
-        ├── outputs/
-        │   ├── model_comparison/
-        │   │   ├── Ace/loglogistic_endpoint_residual/
-        │   │   ├── DMa/loglogistic_endpoint_residual/
-        │   │   ├── Glu/
-        │   │   │   ├── alpha_scaled_hill_time_hazard/
-        │   │   │   ├── hierarchical_lineage_omega2_endpoint_residual/
-        │   │   │   ├── hierarchical_lineage_u_endpoint_residual/
-        │   │   │   └── loglogistic_endpoint_residual/
-        │   │   ├── Gly/loglogistic_endpoint_residual/
-        │   │   ├── Lac/loglogistic_endpoint_residual/
-        │   │   ├── Pyr/loglogistic_endpoint_residual/
-        │   │   ├── Rha/loglogistic_endpoint_residual/
-        │   │   ├── Suc/loglogistic_endpoint_residual/
-        │   │   └── Xyl/loglogistic_endpoint_residual/
-        │   ├── summary/
-        │   └── README.md
-        ├── report/
-        ├── scripts/
-        ├── src/
-        └── README.md
+├── README.md
+├── requirements.txt                  Historical/broader dependencies
+└── projects/microbial-growth/
+    ├── README.md                     Current model and compact research history
+    ├── requirements.txt              Minimal current-workflow dependencies
+    ├── config/glu_current_workflow.json
+    ├── data/
+    │   ├── raw/
+    │   └── processed/
+    │       ├── processed_input_data.csv
+    │       └── UMIK_Ace.csv
+    ├── docs/
+    │   ├── cleanup_manifest.json
+    │   └── repository_tree.txt
+    ├── outputs/
+    │   ├── README.md
+    │   ├── model_comparison/
+    │   │   ├── Glu/
+    │   │   │   ├── static_offset_detrended_hazard/
+    │   │   │   ├── empirical_detrended_hazard/
+    │   │   │   └── loglogistic_endpoint_residual/
+    │   │   └── <other sugars>/loglogistic_endpoint_residual/
+    │   └── summary/                   Cross-sugar reference and empirical checks
+    ├── scripts/                      Current runners/tests and historical code
+    └── src/                          Model implementations and common helpers
