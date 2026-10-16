@@ -1,0 +1,57 @@
+{
+  "model": {
+    "q": "q_li=A_l+E_i+r_li with every A_l and E_i inferred",
+    "alpha": "z_li=G_i+x_li; alpha_li=GammaQuantile(Phi(z_li)); every G_i inferred",
+    "variance_constraint": "Var(G_i)+Var(x_li)=1, preserving the fitted Gamma marginal before conditioning",
+    "hazard_consequence": "The hazard is alpha-scaled, so G_i changes tau but not the sampled growth increment s=alpha*tau or the birth recursion"
+  },
+  "fit": {
+    "alpha_environment": {
+      "rho": 0.5138094737567086,
+      "environment_prior_sd": 0.09879989313076619,
+      "stationary_residual_sd": 0.9951073214067663,
+      "sigma_residual_innovation": 0.8537068712922581,
+      "latent_log_joint_density": -7833.9014798515855,
+      "latent_log_marginal_likelihood": -7921.6555265746265,
+      "success": true,
+      "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH"
+    },
+    "q_log_joint_density": 6713.872722044676,
+    "alpha_log_joint_density": -7921.6555265746265,
+    "q_optimizer_success": true,
+    "alpha_optimizer_success": true
+  },
+  "metrics": {
+    "stationary_alpha": {
+      "birth_trajectory_rmse": 0.09710762246745487,
+      "alpha_trajectory_rmse": 0.019037843146274047,
+      "time_trajectory_rmse": 0.05875262200284759,
+      "growth_trajectory_rmse": 0.009902184834191908,
+      "birth_acf_rmse": 0.07672806045056167,
+      "alpha_acf_rmse": 0.029092483348781166,
+      "birth_ks": 0.026843609505459165,
+      "alpha_ks": 0.11024951830443158,
+      "time_ks": 0.166744641350211,
+      "q_ks": 0.0785049789029536
+    },
+    "alpha_environment": {
+      "birth_trajectory_rmse": 0.09719020329756507,
+      "alpha_trajectory_rmse": 0.011652614305215312,
+      "time_trajectory_rmse": 0.03767665641473823,
+      "growth_trajectory_rmse": 0.009948543031376123,
+      "birth_acf_rmse": 0.07734781846161479,
+      "alpha_acf_rmse": 0.028822080305417365,
+      "birth_ks": 0.026536287732819575,
+      "alpha_ks": 0.11251541425818884,
+      "time_ks": 0.16768270042194094,
+      "q_ks": 0.07888168776371307
+    }
+  },
+  "run_config": {
+    "replicates": 500,
+    "horizon": 20,
+    "max_lag": 15,
+    "seed": 77123
+  },
+  "runtime_minutes": 0.5571502168973287
+}

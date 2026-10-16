@@ -9,6 +9,10 @@
   IDs, configuration access, and correlation helper.
 - [growth_plotting.py](growth_plotting.py): shared plotting panel and portable
   font selection.
+- [autoregressive_residual_model.py](autoregressive_residual_model.py):
+  exploratory autonomous model with Gamma-copula AR growth rates, Student-t
+  copula AR endpoint residuals, actual beta-distributed fractions, and exact
+  thinning for the protein Hill hazard.
 
 The balanced-cohort and detrending helpers live in
 [fit_empirical_detrended_hazard.py](../scripts/fit_empirical_detrended_hazard.py).

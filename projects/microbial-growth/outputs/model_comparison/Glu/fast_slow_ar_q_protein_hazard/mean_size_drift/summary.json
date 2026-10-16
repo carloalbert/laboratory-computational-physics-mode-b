@@ -1,0 +1,28 @@
+{
+  "model": "factorized fast+slow q, Gamma-copula AR(1) alpha, protein Hill hazard for tau",
+  "uncertainty": "fixed fitted parameters; bands are process-predictive, not parameter-posterior intervals",
+  "replicates": 500,
+  "balanced_lineages": 172,
+  "horizon": 20,
+  "generation_0": {
+    "observed_mean_birth": 2.2734817287967175,
+    "simulated_mean_birth": 2.2713584401146014,
+    "simulated_lo95": 2.206192351844099,
+    "simulated_hi95": 2.334561300191821
+  },
+  "generation_horizon": {
+    "observed_mean_birth": 2.855734675065574,
+    "simulated_mean_birth": 2.6442398147201205,
+    "simulated_lo95": 2.567739618388957,
+    "simulated_hi95": 2.722112303667062,
+    "observed_change": 0.5822529462688566,
+    "simulated_change": 0.37288137460551907
+  },
+  "linear_slope_birth_per_generation": {
+    "observed": 0.027630526684911616,
+    "simulated_mean": 0.012091207360304236,
+    "simulated_lo95": 0.006967000466916898,
+    "simulated_hi95": 0.017376312274645988
+  },
+  "rmse_generation_mean_birth": 0.1585306252354541
+}

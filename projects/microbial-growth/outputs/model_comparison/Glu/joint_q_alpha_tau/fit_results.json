@@ -1,0 +1,210 @@
+{
+  "model": {
+    "variables": [
+      "q",
+      "alpha",
+      "tau"
+    ],
+    "marginals": "two-mode Gaussian q; empirical alpha and tau quantile functions with a conditional semiparametric copula",
+    "factorization": "p(size setpoint) p(q path) p(alpha,tau path | q path, birth-size deviations)",
+    "lineage_size_scale": "m_l is drawn from the empirical distribution of lineage mean log birth size; feedback uses log(b_li)-m_l",
+    "q_dynamics": "q_i=mu_q+r_fast_i+r_slow_i; each r is a stationary Gaussian AR(1)",
+    "dynamics": "w_li=c+B1 w_l(i-1)+B2 w_l(i-2)+D0 qtilde_li+D1 qtilde_l(i-1)+D2 qtilde_l(i-2)+K(log(b_li)-m_l)+e_li, where w=(z_alpha,z_tau)",
+    "size_update": "log(b_(i+1))=log(b_i)+q_i+alpha_i*tau_i",
+    "q": {
+      "mean": -0.5199107494199666,
+      "rho_fast": -0.09652551620286155,
+      "sigma_fast_innovation": 0.0760381633348507,
+      "stationary_fast_sd": 0.07639488848021324,
+      "fast_correlation_length_generations": 0.427725530031658,
+      "rho_slow": 0.9137447484424398,
+      "sigma_slow_innovation": 0.014132760045177172,
+      "stationary_slow_sd": 0.03478501590533714,
+      "slow_correlation_length_generations": 11.085981016003554,
+      "slow_variance_fraction": 0.17172396446281116,
+      "total_marginal_sd": 0.08394150533221796,
+      "log_likelihood": 6665.658740868424,
+      "success": true,
+      "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+      "multistart_log_likelihoods": [
+        6665.658740868348,
+        6665.658740868424,
+        6665.6587408682935,
+        6665.658740867895
+      ],
+      "static_offset_log_likelihood": 6607.531026246412,
+      "twice_log_likelihood_gain_over_static_offset": 116.25542924402362,
+      "aic_gain_over_static_offset": 114.25542924402362
+    },
+    "intercept": [
+      0.00718249961877755,
+      0.004386523855759216
+    ],
+    "B1": [
+      [
+        0.7501104872219442,
+        0.25753376137350037
+      ],
+      [
+        -0.6083027027391374,
+        -0.27593449107710005
+      ]
+    ],
+    "B2": [
+      [
+        -0.09015766762240311,
+        0.00251436841974443
+      ],
+      [
+        0.10326252145981293,
+        -0.02014056088759148
+      ]
+    ],
+    "D_q_current_lag1_lag2": [
+      [
+        2.9549429804795957,
+        0.8789930164529242,
+        -0.8693087091807863
+      ],
+      [
+        -3.2276881506558444,
+        -1.0008958032399404,
+        0.47582007376369023
+      ]
+    ],
+    "K_size_feedback": [
+      0.5828366989215443,
+      -2.359054139486484
+    ],
+    "innovation_distribution": "paired empirical residual bootstrap; Gaussian quasi-likelihood is used only to estimate and compare conditional means",
+    "innovation_covariance": [
+      [
+        0.6014315307174979,
+        -0.3851364303695258
+      ],
+      [
+        -0.3851364303695258,
+        0.511237832517287
+      ]
+    ],
+    "innovation_correlation": [
+      [
+        1.0,
+        -0.6945603894560481
+      ],
+      [
+        -0.6945603894560481,
+        1.0
+      ]
+    ],
+    "n_var2_observations": 5346,
+    "log_likelihood": -10258.469702096205,
+    "no_size_feedback_log_likelihood": -10799.616196624671,
+    "aic_gain_from_size_feedback": 1078.2929890569321
+  },
+  "simulation": {
+    "replicates": 300,
+    "replayed_quantities": "none; only contiguous-prefix lineage lengths are reused",
+    "marginals": {
+      "q": {
+        "observed_mean": -0.519274539470338,
+        "observed_sd": 0.08281322458081443,
+        "simulated_mean": -0.5199933678346956,
+        "simulated_sd": 0.0839326673007325
+      },
+      "alpha": {
+        "observed_mean": 0.5442653180254017,
+        "observed_sd": 0.1355598987791972,
+        "simulated_mean": 0.5441263498573822,
+        "simulated_sd": 0.13577526286681027
+      },
+      "tau": {
+        "observed_mean": 1.1047257384187188,
+        "observed_sd": 0.7046481416726653,
+        "simulated_mean": 1.0915627408264912,
+        "simulated_sd": 0.7349193983120615
+      }
+    },
+    "acf_rmse_lags_1_to_max": {
+      "q": 0.024402995495077528,
+      "alpha": 0.019994847640217802,
+      "tau": 0.03231694135127184
+    },
+    "cross_correlation_rmse_lags_minus8_to_8": {
+      "q_alpha": 0.02095006448396944,
+      "q_tau": 0.023981322106287534,
+      "alpha_tau": 0.025964658663859767
+    },
+    "birth_acf_rmse_lags_1_to_max": 0.1544417692425159,
+    "observed_contemporaneous_correlation": [
+      [
+        1.0,
+        0.2606791835805848,
+        -0.2945191693562329
+      ],
+      [
+        0.2606791835805848,
+        1.0,
+        -0.7359682200814769
+      ],
+      [
+        -0.2945191693562329,
+        -0.735968220081477,
+        1.0
+      ]
+    ],
+    "simulated_contemporaneous_correlation": [
+      [
+        1.0,
+        0.2601793802831877,
+        -0.2210123215956047
+      ],
+      [
+        0.2601793802831877,
+        1.0,
+        -0.6681390549785912
+      ],
+      [
+        -0.2210123215956047,
+        -0.6681390549785912,
+        1.0
+      ]
+    ],
+    "observed_contemporaneous_rank_correlation": [
+      [
+        1.0,
+        0.2989360051673873,
+        -0.24260857450609316
+      ],
+      [
+        0.2989360051673873,
+        1.0,
+        -0.7815584115570757
+      ],
+      [
+        -0.24260857450609316,
+        -0.7815584115570757,
+        0.9999999999999999
+      ]
+    ],
+    "simulated_contemporaneous_rank_correlation": [
+      [
+        1.0,
+        0.2507842828294692,
+        -0.2801075061585441
+      ],
+      [
+        0.25078428282946924,
+        1.0,
+        -0.7598981461864717
+      ],
+      [
+        -0.2801075061585441,
+        -0.7598981461864717,
+        1.0
+      ]
+    ],
+    "observed_corr_q_alpha_tau": -0.29852631549216013,
+    "simulated_corr_q_alpha_tau": -0.17825390040419062
+  }
+}

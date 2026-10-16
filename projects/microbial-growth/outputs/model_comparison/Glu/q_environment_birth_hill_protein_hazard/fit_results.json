@@ -1,0 +1,71 @@
+{
+  "model": {
+    "q": "q_li=A_l+E_i+r_li; every A_l and E_i inferred",
+    "alpha": "stationary Gamma marginal with Gaussian-copula AR(1); no G_i process",
+    "hazard": "h(t|b,alpha)=alpha*omega2*sigmoid(eta*log(b*(exp(alpha*t)-1)/u)+kappa*log(b/b_star))",
+    "nested_model": "kappa=0"
+  },
+  "fit": {
+    "birth_dependent_hazard": {
+      "u": 1.4466438282089509,
+      "omega2": 11.21970014050136,
+      "eta": 8.58928367605865,
+      "kappa": -0.006149339034706671,
+      "b_star": 2.496166634695275,
+      "log_likelihood": 1278.009040790479,
+      "success": true,
+      "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH"
+    },
+    "nested_protein_hazard": {
+      "u": 1.4465600794308255,
+      "omega2": 11.218426109855727,
+      "eta": 8.590126053454378,
+      "b_star": 2.496166634695275,
+      "log_likelihood": 1278.0084147081232,
+      "success": true,
+      "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH"
+    },
+    "likelihood_comparison": {
+      "n_transitions": 5925,
+      "twice_log_likelihood_gain": 0.0012521647117864632,
+      "delta_bic_extended_minus_nested": 8.685683801291546
+    },
+    "q_log_joint_density": 6713.872722044676,
+    "q_optimizer_success": true
+  },
+  "metrics": {
+    "protein_hill": {
+      "birth_trajectory_rmse": 0.09218127917655475,
+      "alpha_trajectory_rmse": 0.019051350751734093,
+      "time_trajectory_rmse": 0.05888021297619928,
+      "growth_trajectory_rmse": 0.009809822820892659,
+      "birth_acf_rmse": 0.07696885705248828,
+      "demeaned_birth_acf_rmse": 0.06152138887521747,
+      "tau_acf_rmse": 0.028961193707443805,
+      "birth_ks": 0.02245793192035972,
+      "q_ks": 0.07870919831223627,
+      "alpha_ks": 0.11050867052023122,
+      "time_ks": 0.16771443037974687
+    },
+    "birth_hill": {
+      "birth_trajectory_rmse": 0.09201392044441009,
+      "alpha_trajectory_rmse": 0.01935875016632569,
+      "time_trajectory_rmse": 0.05939695368745491,
+      "growth_trajectory_rmse": 0.009902321793611071,
+      "birth_acf_rmse": 0.07703084879387925,
+      "demeaned_birth_acf_rmse": 0.06180271945377887,
+      "tau_acf_rmse": 0.02879845392133539,
+      "birth_ks": 0.021845215157353937,
+      "q_ks": 0.07893535864978901,
+      "alpha_ks": 0.10982498394348111,
+      "time_ks": 0.1674106329113924
+    }
+  },
+  "run_config": {
+    "replicates": 500,
+    "horizon": 20,
+    "max_lag": 15,
+    "seed": 54127
+  },
+  "runtime_minutes": 0.6986387491226196
+}

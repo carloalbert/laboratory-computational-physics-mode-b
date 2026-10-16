@@ -1,0 +1,68 @@
+{
+  "model": {
+    "recursion": "log b[i+1] = log b[i] + alpha[i]*tau[i] + q[i]",
+    "q": "q[l,i]=mu_q+r_fast[l,i]+r_slow[l,i], with two independent stationary Gaussian AR(1) modes",
+    "q_likelihood": "Exact Gaussian lineage likelihood; both modes reset across generation gaps",
+    "hazard": "h(t|b,alpha)=alpha*omega2*sigmoid(eta*log(b*(exp(alpha*t)-1)/u))",
+    "alpha": "Gamma marginal, Gaussian-copula AR(1)"
+  },
+  "fit": {
+    "initial_birth": {
+      "log_mean": 0.8041081137654582,
+      "log_sd": 0.1763046365370811,
+      "mean": 2.2697047936759382
+    },
+    "alpha": {
+      "shape": 12.54066066278811,
+      "scale": 0.043057994848203614,
+      "mean": 0.5399757022114001,
+      "sd": 0.15248039547421693,
+      "rho": 0.5174968123424093,
+      "log_likelihood": 4097.488382943444,
+      "success": true
+    },
+    "hazard": {
+      "u": 1.4489693978359366,
+      "omega2": 11.155665391089093,
+      "eta": 8.516122835317425,
+      "log_likelihood": 1300.9652816522648,
+      "success": true,
+      "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH"
+    },
+    "q": {
+      "mean": -0.5199107494199666,
+      "rho_fast": -0.09652551620286155,
+      "sigma_fast_innovation": 0.0760381633348507,
+      "stationary_fast_sd": 0.07639488848021324,
+      "fast_correlation_length_generations": 0.427725530031658,
+      "rho_slow": 0.9137447484424398,
+      "sigma_slow_innovation": 0.014132760045177172,
+      "stationary_slow_sd": 0.03478501590533714,
+      "slow_correlation_length_generations": 11.085981016003554,
+      "slow_variance_fraction": 0.17172396446281116,
+      "total_marginal_sd": 0.08394150533221796,
+      "log_likelihood": 6665.658740868424,
+      "success": true,
+      "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+      "multistart_log_likelihoods": [
+        6665.658740868348,
+        6665.658740868424,
+        6665.6587408682935,
+        6665.658740867895
+      ],
+      "static_offset_log_likelihood": 6607.531026246412,
+      "twice_log_likelihood_gain_over_static_offset": 116.25542924402362,
+      "aic_gain_over_static_offset": 114.25542924402362
+    }
+  },
+  "simulation": {
+    "replicates": 300,
+    "replayed_quantities": "none; only contiguous-prefix lineage lengths are reused",
+    "observed_birth_mean": 2.5582962624409427,
+    "observed_birth_sd": 0.5087146657592241,
+    "simulated_birth_mean": 2.5906882130317808,
+    "simulated_birth_sd": 0.5443599114138011,
+    "birth_acf_rmse_lags_1_to_max": 0.08428764334592555,
+    "q_acf_rmse_lags_1_to_max": 0.02494181228155994
+  }
+}

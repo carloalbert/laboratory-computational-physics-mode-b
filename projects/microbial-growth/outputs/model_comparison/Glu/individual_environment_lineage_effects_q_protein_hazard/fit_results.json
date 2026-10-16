@@ -1,0 +1,83 @@
+{
+  "model": {
+    "equation": "q_li = A_l + E_i + r_li",
+    "lineage_prior": "A_l ~ Normal(mu_A, sigma_A^2); mu_A is the former mu_q",
+    "environment_prior": "E_i ~ iid Normal(0, sigma_E^2)",
+    "residual": "r_li is a stationary Gaussian AR(1)",
+    "reporting_gauge": "sum_i n_i E_i = 0, where n_i is the number of active lineages; A_l+E_i is invariant",
+    "inference": "exact joint Gaussian posterior of every A_l and E_i conditional on plug-in fitted hyperparameters"
+  },
+  "fit": {
+    "q_hyperparameters": {
+      "mean": -0.513679161314225,
+      "rho": -0.03189857817477931,
+      "sigma_lineage_offset": 0.021077578837475568,
+      "stationary_ar_sd": 0.07806775786600285,
+      "sigma_innovation": 0.07802803003271046,
+      "environment_prior_sd": 0.01221885635928832,
+      "offset_variance_fraction": 0.06642569627923786,
+      "fast_correlation_length_generations": 0.29025942980387726,
+      "success": true,
+      "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH"
+    },
+    "individual_effects": {
+      "lineages": 303,
+      "cycles": 47,
+      "mean_posterior_A": -0.5197734726441119,
+      "sd_posterior_mean_A": 0.015678163955993772,
+      "median_posterior_sd_A": 0.013015205460094688,
+      "median_posterior_sd_E": 0.006268420747467687,
+      "correlation_posterior_A_with_observed_lineage_mean_q": 0.8828646481005291
+    },
+    "hyperparameter_log_joint_density": 6713.872722044676,
+    "optimizer_success": true,
+    "optimizer_message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH"
+  },
+  "metrics": {
+    "observed": {
+      "generation_20_change": 0.5822529462688566,
+      "slope_sd": 0.025508267564086386,
+      "median_abs_slope": 0.01559029702748006,
+      "median_trend_R2": 0.1168835189079237
+    },
+    "new_lineages": {
+      "raw_birth_acf_rmse": 0.07749270869421418,
+      "demeaned_birth_acf_rmse": 0.06183832845536094,
+      "q_acf_rmse": 0.03127084236810899,
+      "mean_birth_rmse": 0.08810423676621938,
+      "generation_20_change": 0.47832975335452277,
+      "birth_ks": 0.023565510597302497,
+      "q_ks": 0.08133805907172997,
+      "alpha_ks": 0.1099900449582531,
+      "time_ks": 0.16797603375527426,
+      "raw_birth_acf_lags_inside_95": 2,
+      "demeaned_birth_acf_lags_inside_95": 5,
+      "slope_sd": 0.03966659539009774,
+      "median_abs_slope": 0.01895951051179239,
+      "median_trend_R2": 0.10850114765111243
+    },
+    "conditional_A_E": {
+      "raw_birth_acf_rmse": 0.07652543736768941,
+      "demeaned_birth_acf_rmse": 0.06142386039572694,
+      "q_acf_rmse": 0.030038226035871137,
+      "mean_birth_rmse": 0.09598318092169347,
+      "generation_20_change": 0.4923357629937435,
+      "birth_ks": 0.026776814386641035,
+      "q_ks": 0.0791743459915612,
+      "alpha_ks": 0.10957739242132308,
+      "time_ks": 0.166766582278481,
+      "raw_birth_acf_lags_inside_95": 2,
+      "demeaned_birth_acf_lags_inside_95": 4,
+      "slope_sd": 0.038570677655618224,
+      "median_abs_slope": 0.0186230327947725,
+      "median_trend_R2": 0.10593084828829392
+    }
+  },
+  "run_config": {
+    "replicates": 500,
+    "horizon": 20,
+    "max_lag": 15,
+    "seed": 11937
+  },
+  "runtime_minutes": 0.7227225462595622
+}

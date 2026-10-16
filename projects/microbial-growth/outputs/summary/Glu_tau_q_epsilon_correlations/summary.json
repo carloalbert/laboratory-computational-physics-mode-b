@@ -1,0 +1,140 @@
+{
+  "definitions": {
+    "q": "log(b_next/b)-alpha*tau = log(actual daughter-row f)+epsilon",
+    "epsilon": "q-log(actual daughter-row f)"
+  },
+  "cohort": {
+    "lineages": 172,
+    "transitions_per_lineage": 20,
+    "total_transitions": 3440
+  },
+  "key_correlations": [
+    {
+      "sample": "balanced",
+      "adjustment": "pooled",
+      "x": "tau",
+      "y": "q",
+      "n_transitions": 3440,
+      "pearson_r": -0.26984312006441585,
+      "lineage_bootstrap_lo95": -0.3205913658933937,
+      "lineage_bootstrap_hi95": -0.2234592664272132,
+      "spearman_rho": -0.1993487617064015
+    },
+    {
+      "sample": "balanced",
+      "adjustment": "pooled",
+      "x": "tau",
+      "y": "epsilon",
+      "n_transitions": 3440,
+      "pearson_r": -0.05842948339706928,
+      "lineage_bootstrap_lo95": -0.1268789638447805,
+      "lineage_bootstrap_hi95": 0.0043565706025846685,
+      "spearman_rho": 0.07803317572050697
+    },
+    {
+      "sample": "balanced",
+      "adjustment": "pooled",
+      "x": "tau",
+      "y": "log_f",
+      "n_transitions": 3440,
+      "pearson_r": -0.2487854791422865,
+      "lineage_bootstrap_lo95": -0.29368078535229014,
+      "lineage_bootstrap_hi95": -0.20250117285220456,
+      "spearman_rho": -0.22100356631494447
+    },
+    {
+      "sample": "balanced",
+      "adjustment": "two_way",
+      "x": "tau",
+      "y": "q",
+      "n_transitions": 3440,
+      "pearson_r": -0.23893484376645766,
+      "lineage_bootstrap_lo95": -0.2937096352392606,
+      "lineage_bootstrap_hi95": -0.18468950067928763,
+      "spearman_rho": -0.13564319353257626
+    },
+    {
+      "sample": "balanced",
+      "adjustment": "two_way",
+      "x": "tau",
+      "y": "epsilon",
+      "n_transitions": 3440,
+      "pearson_r": -0.06635823818608283,
+      "lineage_bootstrap_lo95": -0.13801778978899434,
+      "lineage_bootstrap_hi95": -0.004653666716226622,
+      "spearman_rho": 0.04552190040575052
+    },
+    {
+      "sample": "balanced",
+      "adjustment": "two_way",
+      "x": "tau",
+      "y": "log_f",
+      "n_transitions": 3440,
+      "pearson_r": -0.23609088077534282,
+      "lineage_bootstrap_lo95": -0.28983048597252314,
+      "lineage_bootstrap_hi95": -0.18318649584211316,
+      "spearman_rho": -0.1726020893744723
+    },
+    {
+      "sample": "balanced",
+      "adjustment": "lineage_generation_birth_alpha",
+      "x": "tau",
+      "y": "q",
+      "n_transitions": 3440,
+      "pearson_r": -0.11494274867322395,
+      "lineage_bootstrap_lo95": -0.21430525811394266,
+      "lineage_bootstrap_hi95": -0.01253337401263842,
+      "spearman_rho": 0.08423440186885918
+    },
+    {
+      "sample": "balanced",
+      "adjustment": "lineage_generation_birth_alpha",
+      "x": "tau",
+      "y": "epsilon",
+      "n_transitions": 3440,
+      "pearson_r": -0.13544065728125826,
+      "lineage_bootstrap_lo95": -0.24505984185560725,
+      "lineage_bootstrap_hi95": -0.019864702187821992,
+      "spearman_rho": 0.12736249515881323
+    },
+    {
+      "sample": "balanced",
+      "adjustment": "lineage_generation_birth_alpha",
+      "x": "tau",
+      "y": "log_f",
+      "n_transitions": 3440,
+      "pearson_r": -0.016086635456202075,
+      "lineage_bootstrap_lo95": -0.0740139779980372,
+      "lineage_bootstrap_hi95": 0.03651165630917711,
+      "spearman_rho": 0.017578711929225985
+    }
+  ],
+  "pooled_covariance_decomposition": {
+    "cov_tau_q": -0.012626821879550191,
+    "cov_tau_log_f": -0.01057642876722971,
+    "cov_tau_epsilon": -0.0020503931123204843,
+    "identity_error": 2.168404344971009e-18,
+    "fraction_of_tau_q_covariance_from_log_f": 0.83761605795349
+  },
+  "one_percent_trimmed_each_tail": [
+    {
+      "variable": "q",
+      "trim_percent_each_tail": 1.0,
+      "n_pairs": 3370,
+      "pearson_r": -0.17218132616545875
+    },
+    {
+      "variable": "epsilon",
+      "trim_percent_each_tail": 1.0,
+      "n_pairs": 3370,
+      "pearson_r": 0.03287521233580526
+    },
+    {
+      "variable": "log_f",
+      "trim_percent_each_tail": 1.0,
+      "n_pairs": 3370,
+      "pearson_r": -0.1762251212103027
+    }
+  ],
+  "interpretation_note": "q and epsilon are reconstructed using alpha*tau, so their same-cycle correlations with tau are descriptive and partly algebraic; lagged correlations help distinguish persistence."
+}

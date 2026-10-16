@@ -1,0 +1,68 @@
+{
+  "model": {
+    "recursion": "b[i+1] = b[i] f[i] exp(alpha[i] tau[i] + epsilon[i])",
+    "hazard": "h(t|b,alpha)=alpha*omega2*sigmoid(eta*log(b*(exp(alpha*t)-1)/u))",
+    "initial_birth": "lognormal MLE",
+    "alpha": "Gamma marginal, Gaussian-copula AR(1)",
+    "epsilon": "Student-t(df=4) marginal, Gaussian-copula AR(1)",
+    "fraction": "Beta with logit mean linear in current log birth"
+  },
+  "fit": {
+    "initial_birth": {
+      "log_mean": 0.8041081137654582,
+      "log_sd": 0.1763046365370811,
+      "mean": 2.2697047936759382
+    },
+    "alpha": {
+      "shape": 12.54066066278811,
+      "scale": 0.043057994848203614,
+      "mean": 0.5399757022114001,
+      "sd": 0.15248039547421693,
+      "rho": 0.5174968123424093,
+      "log_likelihood": 4097.488382943444,
+      "success": true
+    },
+    "epsilon": {
+      "df": 4.0,
+      "location": 0.04397205978784988,
+      "scale": 0.03127553302246106,
+      "rho": 0.31660346524346383,
+      "log_likelihood": 11106.218979631754,
+      "success": true
+    },
+    "fraction": {
+      "log_birth_pivot": 0.9198768458619645,
+      "beta0": 0.2952260197622128,
+      "beta_birth": 0.43190097221961277,
+      "concentration": 195.26468410601723,
+      "mean_at_pivot": 0.5732750649826309,
+      "log_likelihood": 11845.646131037083,
+      "success": true
+    },
+    "hazard": {
+      "u": 1.4489693978359366,
+      "omega2": 11.155665391089093,
+      "eta": 8.516122835317425,
+      "log_likelihood": 1300.9652816522648,
+      "success": true,
+      "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH"
+    }
+  },
+  "data": {
+    "lineages": 303,
+    "consecutive_transitions": 6151,
+    "acf_prefix_lineages": 303,
+    "acf_births": 6228,
+    "generation_gap_lineages": 44
+  },
+  "simulation": {
+    "replicates": 300,
+    "replayed_quantities": "none; only observed contiguous-prefix lengths are reused as observation design",
+    "negative_endpoint_log_growth_fraction": 4.1631504922644164e-05,
+    "observed_birth_mean": 2.5582962624409427,
+    "observed_birth_sd": 0.5087146657592241,
+    "simulated_birth_mean": 2.7323864905912765,
+    "simulated_birth_sd": 0.7851171132154542,
+    "acf_rmse_lags_1_to_max": 0.09499043525497643
+  }
+}

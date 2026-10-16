@@ -1,0 +1,131 @@
+{
+  "cohort": {
+    "sugar": "Glu",
+    "lineages": 172,
+    "transitions_per_lineage": 20,
+    "reason": "fixed balanced panel prevents lineage-dropout composition drift"
+  },
+  "identity": "delta log b = log f + alpha*tau + epsilon",
+  "actual_fraction_alignment": "transition i uses the f recorded on daughter row i+1",
+  "maximum_transition_identity_error": 1.1102230246251565e-16,
+  "mean_birth": {
+    "generation_0": 2.2734817287967175,
+    "generation_20": 2.855734675065575,
+    "change": 0.5822529462688575,
+    "relative_change": 0.25610627914613837
+  },
+  "lineage_composition_check": {
+    "all_available_generation_0_lineages": 303,
+    "all_available_generation_20_lineages": 187,
+    "all_available_relative_mean_birth_change": 0.25751267912326536,
+    "balanced_relative_mean_birth_change": 0.25610627914613837
+  },
+  "mean_log_birth": {
+    "generation_0": 0.8077202951704556,
+    "generation_20": 1.033577225970433,
+    "change": 0.22585693079997737
+  },
+  "cumulative_log_contributions": {
+    "log_f": -11.284162973384513,
+    "epsilon": 0.8694211927482345,
+    "mean_alpha_times_mean_tau": 11.832031784458284,
+    "cov_alpha_tau": -1.191433073022027,
+    "net": 0.22585693079997826
+  },
+  "early_late": {
+    "definition": "pooled first 5 versus final 5 transitions",
+    "early": {
+      "mean_log_f": -0.5909944893804641,
+      "mean_epsilon": 0.051900650748287966,
+      "mean_alpha": 0.5332345079973488,
+      "mean_tau": 1.152131782968779,
+      "mean_alpha_tau": 0.5465784046434332,
+      "mean_alpha_times_mean_tau": 0.6143564244394651,
+      "cov_alpha_tau": -0.06777801979603193,
+      "corr_alpha_tau": -0.7357279476705271,
+      "mean_delta_log_birth": 0.007484566011257065
+    },
+    "late": {
+      "mean_log_f": -0.5358185711114949,
+      "mean_epsilon": 0.032432936708586345,
+      "mean_alpha": 0.5651538349712,
+      "mean_tau": 1.0199612403304767,
+      "mean_alpha_tau": 0.5184422788243837,
+      "mean_alpha_times_mean_tau": 0.5764350064947507,
+      "cov_alpha_tau": -0.057992727670367006,
+      "corr_alpha_tau": -0.7220495339944869,
+      "mean_delta_log_birth": 0.015056644421474957
+    },
+    "late_minus_early": {
+      "mean_log_f": 0.05517591826896917,
+      "mean_epsilon": -0.01946771403970162,
+      "mean_alpha": 0.031919326973851136,
+      "mean_tau": -0.1321705426383022,
+      "mean_alpha_tau": -0.028136125819049562,
+      "mean_alpha_times_mean_tau": -0.037921417944714486,
+      "cov_alpha_tau": 0.009785292125664924,
+      "corr_alpha_tau": 0.013678413676040169,
+      "mean_delta_log_birth": 0.007572078410217891
+    },
+    "shapley_change_in_mean_alpha_times_mean_tau": {
+      "alpha": 0.0346658737141549,
+      "tau": -0.07258729165886933,
+      "sum": -0.03792141794471443
+    },
+    "lineage_bootstrap_ci95": {
+      "mean_log_f": [
+        0.048030991481321,
+        0.062319447311615914
+      ],
+      "mean_epsilon": [
+        -0.026461697674423388,
+        -0.012954791199597733
+      ],
+      "mean_alpha": [
+        0.013403825159451427,
+        0.050116831659527426
+      ],
+      "mean_tau": [
+        -0.20930232558558137,
+        -0.05465116279179072
+      ],
+      "mean_alpha_tau": [
+        -0.03720546571450822,
+        -0.01881769417388723
+      ],
+      "mean_alpha_times_mean_tau": [
+        -0.0645292994986552,
+        -0.011198509962262675
+      ],
+      "cov_alpha_tau": [
+        -0.012298753882921279,
+        0.031614010318890946
+      ],
+      "corr_alpha_tau": [
+        -0.04490584877019077,
+        0.07559645559841993
+      ],
+      "mean_delta_log_birth": [
+        0.0009212780720272531,
+        0.01412101252356502
+      ],
+      "shapley_alpha": [
+        0.014403638136010406,
+        0.054530514758268915
+      ],
+      "shapley_tau": [
+        -0.1145211224847291,
+        -0.030039648110240465
+      ],
+      "shapley_sum": [
+        -0.06452929949865524,
+        -0.0111985099622627
+      ]
+    }
+  },
+  "bootstrap": {
+    "replicates": 5000,
+    "unit": "lineage",
+    "seed": 90217
+  }
+}
